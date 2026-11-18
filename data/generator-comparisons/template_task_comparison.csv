@@ -1,0 +1,16 @@
+task_id,parent_id,enumeration_slots,random_control_slots,matched_allocation,enumeration_accepted,random_control_accepted,enumeration_acceptance_fraction,random_control_acceptance_fraction,enumeration_unique_families,random_control_unique_families,unique_family_difference_enum_minus_control,editable_denominator_atom_count,editable_denominator_fraction,editable_graph_component_count,anchor_count,enum_mean_new_heavy_atoms_accepted,random_mean_new_heavy_atoms_accepted,biological_status
+P3-aprepitant-357705e0e5dc365d,aprepitant,32,32,True,32,32,1.0,1.0,32,32,0,18,0.4864864864864865,2,2,2.28125,3.8125,unqualified
+P3-aprepitant-b9357977ce96b7b9,aprepitant,32,32,True,0,0,0.0,0.0,0,0,0,13,0.35135135135135137,2,3,,,unqualified
+P3-aprepitant-f54e2c5f436ab380,aprepitant,32,32,True,32,32,1.0,1.0,31,31,0,9,0.24324324324324326,3,3,2.28125,6.53125,unqualified
+P3-celecoxib-332091c4181a5a67,celecoxib,0,0,False,0,0,0.0,0.0,0,0,0,9,0.34615384615384615,1,2,,,unqualified
+P3-celecoxib-4b41c51d6548ae16,celecoxib,22,22,True,22,22,1.0,1.0,22,16,6,4,0.15384615384615385,1,1,2.1818181818181817,2.3636363636363638,unqualified
+P3-celecoxib-550cf269a5fb02d2,celecoxib,32,32,True,0,0,0.0,0.0,0,0,0,5,0.19230769230769232,1,2,,,unqualified
+P3-efavirenz-353b7975f1e5020a,efavirenz,0,0,False,0,0,0.0,0.0,0,0,0,5,0.23809523809523808,1,3,,,unqualified
+P3-efavirenz-38541aa27128519a,efavirenz,22,22,True,22,22,1.0,1.0,22,15,7,4,0.19047619047619047,1,1,2.1818181818181817,2.3181818181818183,unqualified
+P3-efavirenz-583009620018e01d,efavirenz,0,0,False,0,0,0.0,0.0,0,0,0,12,0.5714285714285714,1,5,,,unqualified
+P3-sitagliptin-054d4f1260a9f2cd,sitagliptin,32,32,True,32,32,1.0,1.0,32,32,0,7,0.25,4,4,2.28125,8.9375,unqualified
+P3-sitagliptin-34759d47bfad3bd4,sitagliptin,32,32,True,0,20,0.0,0.625,0,20,-20,16,0.5714285714285714,4,4,,9.75,unqualified
+P3-sitagliptin-98056b73c6bc3956,sitagliptin,32,32,True,0,0,0.0,0.0,0,0,0,10,0.35714285714285715,4,6,,,unqualified
+P3-sorafenib-267ef8f8904bbed7,sorafenib,22,22,True,22,22,1.0,1.0,22,16,6,4,0.125,1,1,2.1818181818181817,2.0454545454545454,unqualified
+P3-sorafenib-616f5e77d11dd3eb,sorafenib,0,0,False,0,0,0.0,0.0,0,0,0,10,0.3125,1,2,,,unqualified
+P3-sorafenib-7730f2b42763e4eb,sorafenib,22,22,True,22,22,1.0,1.0,22,17,5,15,0.46875,1,1,2.1818181818181817,2.0454545454545454,unqualified

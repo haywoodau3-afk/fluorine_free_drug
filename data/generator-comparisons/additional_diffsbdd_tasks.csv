@@ -1,0 +1,5 @@
+task_id,parent_id,mask_id,attempt_slots_reserved,attempts_returned,raw_parse_pass,fixed_coordinate_core_pass,raw_protected_bond_graph_pass,exact_core_repair_pass,chemistry_accepted_after_repair,unique_accepted_connectivity_families,incomplete_batches,failed_batches,geometry_qualification
+P3-celecoxib-332091c4181a5a67,celecoxib,MASK-2902d8fe0660f3718f33,8,8,8,8,0,8,5,5,0,0,not_qualified_by_controlled_common_pipeline
+P3-celecoxib-4b41c51d6548ae16,celecoxib,MASK-7d7bd0e145903b812173,8,5,5,5,0,5,3,3,1,0,not_qualified_by_controlled_common_pipeline
+P3-sitagliptin-054d4f1260a9f2cd,sitagliptin,MASK-48a60da02b2f62f5d291,8,8,8,8,0,8,1,1,0,0,not_qualified_by_controlled_common_pipeline
+P3-sitagliptin-34759d47bfad3bd4,sitagliptin,MASK-4e300faf684bfe968d32,8,8,8,8,0,6,0,0,0,0,not_qualified_by_controlled_common_pipeline

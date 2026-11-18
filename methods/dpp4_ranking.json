@@ -1,0 +1,68 @@
+{
+  "question": "Does a fixed Morgan random forest rank high-potency PFAS-free human DPP-4 compounds across held-out publications and Murcko scaffolds using the full public exact-IC50 dataset?",
+  "scope": "Retrospective target-wide classification across heterogeneous DPP-4 IC50 assays. Assay conditions remain attached to observations and are not treated as numerically interchangeable. This is not prospective or clinical validation.",
+  "eligible_records": {
+    "source": "inputs/chembl/dpp4_benchmark_input.csv",
+    "target_chembl_id": "CHEMBL284",
+    "target_organism": "Homo sapiens",
+    "endpoint": "exact IC50 in nM",
+    "chemical_filter": "ChEMBL parent structure passes the project's OECD 2021 saturated CF3/CF2 motif rule; aryl C-F alone is allowed.",
+    "positive_threshold_inclusive_nM": 100,
+    "data_validity_comment": "Retain exact measurements with ChEMBL validity comments; report their counts, do not silently remove them."
+  },
+  "excluded_prior_test_documents": [
+    "CHEMBL1155131",
+    "CHEMBL1143182",
+    "CHEMBL1287796"
+  ],
+  "parent_deduplication": "Within the eligible dataset after prior-test exclusions, retain parent IDs with exactly one eligible activity row. Drop all parent IDs with more than one eligible record rather than pool values across assays.",
+  "split": {
+    "outer_folds": 5,
+    "group": "document_chembl_id",
+    "stratification": "binary activity class at 100 nM",
+    "method": "sklearn StratifiedGroupKFold",
+    "shuffle": true,
+    "random_state": 20261003,
+    "fold_manifest": "methods/dpp4_folds.json",
+    "train_test_scaffold_rule": "Within each fold, remove every training parent whose Murcko scaffold appears in that fold's held-out publications; verify no parent or scaffold overlap.",
+    "maximum_train_test_morgan_tanimoto": 0.5,
+    "similarity_rule": "Also remove every training parent with chirality-enabled Morgan radius-2/2048-bit Tanimoto >0.50 to any parent in that fold's held-out set. Recompute and report the remaining maximum similarity."
+  },
+  "features": {
+    "fingerprint": "RDKit Morgan/ECFP radius 2, 2048 bits, chirality enabled",
+    "document_or_assay_features": false
+  },
+  "primary_model": {
+    "estimator": "sklearn RandomForestClassifier",
+    "n_estimators": 500,
+    "criterion": "gini",
+    "max_features": "sqrt",
+    "min_samples_leaf": 2,
+    "class_weight": "balanced_subsample",
+    "bootstrap": true,
+    "random_state": 20261003,
+    "hyperparameter_tuning": false
+  },
+  "baselines": {
+    "nearest_neighbor": "For each held-out compound, take the maximum Morgan Tanimoto to any training parent; score by the mean activity label among tied nearest parents. Rank by descending score, descending similarity, then parent ChEMBL ID.",
+    "random": "Use each fold's positive prevalence as its average-precision baseline and report exact hypergeometric top-shortlist expectation."
+  },
+  "evaluation": {
+    "primary_metric": "macro-average precision across the five publication-held-out folds",
+    "secondary_metrics": [
+      "per-fold average precision",
+      "ROC-AUC",
+      "precision at top 5%",
+      "recall at top 5%"
+    ],
+    "shortlist": "ceil(5% of each fold's held-out parent count)",
+    "qualification_rule": "The primary model qualifies only if its macro-average precision strictly exceeds both nearest-neighbor macro-average precision and mean fold prevalence, its average precision exceeds fold prevalence in at least 4 of 5 folds, and pooled top-5%-shortlist recovery is at least 1.25 times the exact random expectation.",
+    "uncertainty": "Report all fold-level metrics, counts, predictions, and exact random-recovery probabilities; no tuning or threshold changes after evaluation."
+  },
+  "prohibitions": [
+    "Do not use any held-out publication or scaffold for model fitting, threshold changes, or hyperparameter tuning within its fold.",
+    "Do not pool raw IC50 values across assays or publications.",
+    "Do not infer GLP-1 response, clinical exposure, safety, therapeutic equivalence, or calibrated potency from this benchmark.",
+    "Do not generate the main candidate pool unless this model passes the frozen qualification rule."
+  ]
+}

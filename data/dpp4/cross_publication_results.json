@@ -1,0 +1,71 @@
+{
+  "status": "completed",
+  "split_audit": {
+    "training_scaffold_count": 8,
+    "external_test_scaffold_count": 10,
+    "shared_scaffolds": [],
+    "max_morgan_tanimoto_chirality_enabled": 0.24489795918367346,
+    "max_morgan_tanimoto_chirality_disabled": 0.2604166666666667
+  },
+  "cohort_counts": {
+    "training_compounds": 48,
+    "training_positives": 35,
+    "external_test_compounds": 32,
+    "external_test_positives": 13
+  },
+  "model_versions": {
+    "python": "3.12.14",
+    "rdkit": "2026.03.1",
+    "scikit_learn": "1.9.1",
+    "vina": "AutoDock Vina v1.2.7"
+  },
+  "metrics": {
+    "primary_model": {
+      "recovery_at_5": 1,
+      "precision_at_5": 0.2,
+      "recall_at_5": 0.07692307692307693,
+      "roc_auc": 0.5404858299595141,
+      "average_precision": 0.4164086892751585,
+      "top_5_parent_ids": [
+        "CHEMBL480942",
+        "CHEMBL520921",
+        "CHEMBL479381",
+        "CHEMBL479567",
+        "CHEMBL520434"
+      ]
+    },
+    "nearest_neighbor": {
+      "recovery_at_5": 4,
+      "precision_at_5": 0.8,
+      "recall_at_5": 0.3076923076923077,
+      "roc_auc": 0.4959514170040486,
+      "average_precision": 0.40674857549857546,
+      "top_5_parent_ids": [
+        "CHEMBL481669",
+        "CHEMBL471960",
+        "CHEMBL519272",
+        "CHEMBL481177",
+        "CHEMBL452998"
+      ]
+    },
+    "vina_docking": {
+      "recovery_at_5": 1,
+      "precision_at_5": 0.2,
+      "recall_at_5": 0.07692307692307693,
+      "roc_auc": 0.5991902834008097,
+      "average_precision": 0.46837825008073874,
+      "top_5_parent_ids": [
+        "CHEMBL482104",
+        "CHEMBL479803",
+        "CHEMBL471960",
+        "CHEMBL480943",
+        "CHEMBL520921"
+      ]
+    }
+  },
+  "random_shortlist_expected_positives": 2.03125,
+  "primary_model_random_recovery_probability_at_least_observed": 0.9422572699825202,
+  "qualified_for_narrow_retrospective_task": false,
+  "qualification_rule": "The primary model qualifies for this narrow retrospective task only if it recovers at least 4 of 5 positives and strictly exceeds both nearest-neighbor and docking-score recovery@5. If it fails, do not use it to claim qualified potency support for candidate generation.",
+  "interpretation": "A retrospective result in one small cross-publication assay pair. It is not prospective potency validation or evidence for clinical response, exposure, safety, or therapeutic equivalence."
+}

@@ -1,0 +1,35 @@
+{
+  "strict_atlas_by_parent": {
+    "sitagliptin": 23,
+    "sorafenib": 51,
+    "aprepitant": 97,
+    "celecoxib": 23
+  },
+  "topology_counts": {
+    "one-anchor": 48,
+    "multi-anchor or multi-site": 100,
+    "ring or framework": 46
+  },
+  "site_observations": {
+    "resolved_attachment_labelled_fragment": 262,
+    "resolved_implicit_hydrogen": 7,
+    "unresolved_anchor_deleted": 22
+  },
+  "distinct_nonempty_fragments": 34,
+  "target_aware_designs": 926,
+  "zero_fluorine_designs": 42,
+  "stock_terminating_full": 134,
+  "stock_terminating_zero_fluorine": 24,
+  "held_out_dpp4": {
+    "n": 3098,
+    "top5_actives": 117,
+    "shortlist_size": 156,
+    "random_forest_ap": 0.7101927992010648,
+    "nearest_neighbour_ap": 0.5969927173420341,
+    "prevalence": 0.5574507386423838
+  },
+  "lipophilicity": {
+    "fail_model_resolution_comparison": 46,
+    "abstain_parent_reference_missing_or_ambiguous": 148
+  }
+}

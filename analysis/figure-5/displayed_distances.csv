@@ -1,0 +1,9 @@
+panel,design_id,pose_model,ligand_pdbqt_atom_serial,ligand_pdbqt_atom_name,ligand_element,receptor_author_chain,receptor_residue_name,receptor_author_residue_number,receptor_atom_name,receptor_element,distance_angstrom,displayed_distance_angstrom
+5A,DME-2c3bc93701a42d819162,1,23,N,N,A,SER,339,O,O,2.984933,2.98
+5A,DME-2c3bc93701a42d819162,1,21,O,O,A,HIS,75,NE2,N,3.128565,3.13
+5B,DME-946ca500ce12d98b4f7e,1,25,N,N,A,SER,339,O,O,3.021826,3.02
+5B,DME-946ca500ce12d98b4f7e,1,24,O,O,A,HIS,75,NE2,N,3.164854,3.16
+5C,DME-d755216e7f8f167026e7,1,5,N,N,A,LYS,101,O,O,2.901772,2.90
+5C,DME-d755216e7f8f167026e7,1,20,O,O,A,TYR,188,O,O,2.998651,3.00
+5D,DME-be584cef54c7abf979dd,1,21,O,O,A,ASP,594,N,N,2.805191,2.81
+5D,DME-be584cef54c7abf979dd,1,19,N,N,A,GLU,501,OE2,O,3.000278,3.00

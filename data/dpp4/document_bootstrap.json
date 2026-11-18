@@ -1,0 +1,53 @@
+{
+  "status": "exploratory uncertainty analysis after the frozen primary benchmark; does not change qualification",
+  "resampling_unit": "source document within each of the five already-frozen held-out folds",
+  "replicates": 2000,
+  "seed": 20261003,
+  "conditioned_on": "The already-fitted fold models and their predictions; training data are not resampled or refit.",
+  "summary": {
+    "random_forest_macro_average_precision": {
+      "median": 0.7163532600002331,
+      "percentile_95_interval": [
+        0.6536551824047575,
+        0.7769056762303166
+      ]
+    },
+    "nearest_neighbor_macro_average_precision": {
+      "median": 0.6004392303579267,
+      "percentile_95_interval": [
+        0.5417426582188917,
+        0.6555313581170892
+      ]
+    },
+    "mean_fold_prevalence": {
+      "median": 0.5580809472866849,
+      "percentile_95_interval": [
+        0.5019884899554187,
+        0.6149779602335564
+      ]
+    },
+    "macro_ap_difference_random_forest_minus_nearest_neighbor": {
+      "median": 0.11589664997822413,
+      "percentile_95_interval": [
+        0.07321212638622526,
+        0.15912516600801588
+      ]
+    },
+    "pooled_top5pct_recovery_enrichment": {
+      "median": 1.3693097411387858,
+      "percentile_95_interval": [
+        1.1131413742643639,
+        1.6094243121442477
+      ]
+    }
+  },
+  "bootstrap_fraction_random_forest_ap_exceeds_nearest_neighbor": 1.0,
+  "bootstrap_fraction_random_forest_ap_exceeds_mean_prevalence": 1.0,
+  "input_sha256": {
+    "predictions_csv": "0ec96aa28191f2b04c6ea2f83c006fe91ac900e837e315dcb7d9e09c2e81041e"
+  },
+  "software": {
+    "numpy": "2.5.3",
+    "scikit_learn": "1.9.1"
+  }
+}

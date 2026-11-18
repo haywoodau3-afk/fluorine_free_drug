@@ -1,0 +1,115 @@
+{
+  "source": "Supplemental_DPPPRED-IV.pdf, Table S1; exact structures and binary labels transcribed from recovered source PDF.",
+  "project_protocol": "protocols/dpp4-targetwide-activity-benchmark-v0.1.json",
+  "scope_note": "Exploratory cross-endpoint concordance only: model label is ChEMBL exact IC50 <=100 nM; S1 label is >15% inhibition at 1.5 uM. S1 compounds were selected by DPPPRED-IV across its prediction range, so this is not an unbiased external benchmark.",
+  "source_table_reproduction": {
+    "n": 29,
+    "experimental_positive": 19,
+    "dppreddiv_predicted_positive": 17,
+    "true_positive": 14,
+    "true_negative": 7,
+    "accuracy": 0.7241379310344828
+  },
+  "project_screen_and_overlap": {
+    "s1_motif_free_n": 28,
+    "s1_motif_positive_ids": [
+      "21"
+    ],
+    "exact_inchikey_overlaps_with_frozen_chEMBL_training_cohort": [],
+    "exact_overlap_n": 0,
+    "close_analogue_ids_max_morgan_tanimoto_gt_0_50_before_purge": [],
+    "close_analogue_n": 0,
+    "training_parents_before_purge": 3098,
+    "training_parents_purged_at_gt_0_50_to_evaluation_set": 0,
+    "training_parents_after_purge": 3098,
+    "evaluation_ids_after_screen_and_exact_overlap_rules": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27",
+      "28",
+      "29"
+    ]
+  },
+  "exploratory_metrics": {
+    "endpoint": "S1 experimental binary inhibition label",
+    "project_rf": {
+      "n": 28,
+      "positive_n": 19,
+      "negative_n": 9,
+      "positive_prevalence": 0.6785714285714286,
+      "average_precision": 0.6531657485327844,
+      "roc_auc": 0.3216374269005848
+    },
+    "nearest_neighbor_baseline": {
+      "n": 28,
+      "positive_n": 19,
+      "negative_n": 9,
+      "positive_prevalence": 0.6785714285714286,
+      "average_precision": 0.6291603133708397,
+      "roc_auc": 0.3538011695906433
+    },
+    "simple_prevalence_average_precision_baseline": 0.6785714285714286,
+    "bootstrap": {
+      "bootstrap_resamples": 10000,
+      "sampling": "Stratified compound bootstrap within this selected set; conditional uncertainty only.",
+      "95pct_percentile_interval": {
+        "rf_average_precision": [
+          0.5463900145398027,
+          0.785284541104343
+        ],
+        "rf_roc_auc": [
+          0.13450292397660818,
+          0.5321637426900585
+        ],
+        "nn_average_precision": [
+          0.5884711779448621,
+          0.7176843624212046
+        ],
+        "nn_roc_auc": [
+          0.16666666666666666,
+          0.5584795321637426
+        ]
+      },
+      "95pct_percentile_interval_rf_minus_nn": {
+        "average_precision": [
+          -0.08282713338152002,
+          0.13633684002208943
+        ],
+        "roc_auc": [
+          -0.24561403508771928,
+          0.1666666666666667
+        ]
+      }
+    }
+  },
+  "predictions_csv": "data/processed/dppreddiv_molport_external_cohort/scored-motif-free-nonoverlap-cohort.csv",
+  "limitations": [
+    "One fixed-dose thresholded fluorescence endpoint; no experimental IC50 values or dose-response curves are shown in S1.",
+    "The project's frozen outcome is exact IC50 <=100 nM; the S1 >15%-at-1.5-uM outcome is not threshold-equivalent.",
+    "The 29 MolPort compounds were selected by DPPPRED-IV, so uncertainty intervals are conditional on this selected set.",
+    "Predicted IC50 values printed in S1 are DPPPRED-IV model outputs, not measurements and not project-model predictions."
+  ]
+}

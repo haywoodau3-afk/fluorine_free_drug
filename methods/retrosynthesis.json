@@ -1,0 +1,23 @@
+{
+  "search": {
+    "algorithm": "mcts",
+    "iteration_limit": 1,
+    "time_limit": 5,
+    "max_transforms": 6,
+    "exclude_target_from_stock": true
+  },
+  "expansion": {
+    "uspto": {
+      "model": "external/retrosynthesis/uspto_model.onnx",
+      "template": "external/retrosynthesis/uspto_templates.csv.gz",
+      "cutoff_cumulative": 0.995,
+      "cutoff_number": 50
+    }
+  },
+  "filter": {
+    "uspto": "external/retrosynthesis/uspto_filter_model.onnx"
+  },
+  "stock": {
+    "zinc": "external/retrosynthesis/zinc_stock.hdf5"
+  }
+}

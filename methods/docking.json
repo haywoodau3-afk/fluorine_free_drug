@@ -1,0 +1,61 @@
+{
+  "status": "exploratory pose and contact-profile analysis; not an affinity or potency model",
+  "contexts": {
+    "sitagliptin": {
+      "target_system": "DPP-4",
+      "structure": "inputs/pdb/1X70.cif",
+      "ligand_residue": "715",
+      "chain": "A"
+    },
+    "efavirenz": {
+      "target_system": "HIV-1 RT",
+      "structure": "inputs/pdb/1IKW.cif",
+      "ligand_residue": "EFZ",
+      "chain": "A"
+    },
+    "celecoxib": {
+      "target_system": "COX-2/COX-1",
+      "structure": "inputs/pdb/3LN1.cif",
+      "ligand_residue": "CEL",
+      "chain": "A"
+    },
+    "aprepitant": {
+      "target_system": "NK1R",
+      "structure": "inputs/pdb/6HLO.cif",
+      "ligand_residue": "GBQ",
+      "chain": "A"
+    },
+    "sorafenib": {
+      "target_system": "RAF/VEGFR kinases",
+      "structure": "inputs/pdb/5HI2.cif",
+      "ligand_residue": "BAX",
+      "chain": "A"
+    }
+  },
+  "receptor_preparation": {
+    "remove_bound_ligand": true,
+    "remove_waters_and_nonpolymer_ligands": true,
+    "retain_polymer": true,
+    "box_padding_angstrom": 8.0,
+    "minimum_box_size_angstrom": 20.0
+  },
+  "ligand_preparation": {
+    "conformer_method": "ETKDGv3",
+    "force_field": "MMFF94s",
+    "random_seed": 20261110
+  },
+  "vina": {
+    "exhaustiveness": "see data/docking/executed_runs.csv",
+    "num_modes": 5,
+    "energy_range_kcal_per_mol": 3,
+    "cpu_threads": 2,
+    "random_seeds": [
+      20261110
+    ]
+  },
+  "contact_profile": {
+    "distance_cutoff_angstrom": 4.0,
+    "metric": "residue-set Jaccard similarity to parent bound-ligand contact set"
+  },
+  "claim_boundary": "Docking score and contact overlap are exploratory structure-based hypotheses; they do not establish affinity, potency, selectivity, retained biological function, or equivalence."
+}

@@ -1,0 +1,141 @@
+{
+  "status": "completed",
+  "cohort_counts": {
+    "training_parents": 272,
+    "training_positives": 184,
+    "training_negatives": 88,
+    "training_scaffolds": 110,
+    "training_duplicate_parent_ids_excluded": [
+      "CHEMBL1194345",
+      "CHEMBL142703",
+      "CHEMBL224435",
+      "CHEMBL237119",
+      "CHEMBL241253",
+      "CHEMBL307636",
+      "CHEMBL376359",
+      "CHEMBL391466",
+      "CHEMBL77538",
+      "CHEMBL77539"
+    ],
+    "external_test_parents": 30,
+    "external_test_scaffolds": 11,
+    "external_test_documents": [
+      "CHEMBL1143182",
+      "CHEMBL1287796"
+    ]
+  },
+  "split_audit": {
+    "shared_test_train_parents": [],
+    "shared_test_train_scaffolds": [],
+    "test_cohort_cross_parent_overlap": false,
+    "test_cohort_cross_scaffold_overlap": false,
+    "max_test_cohort_cross_tanimoto": 0.14606741573033707,
+    "max_train_test_tanimoto_by_assay": {
+      "CHEMBL932062": 0.4520547945205479,
+      "CHEMBL1291739": 0.4157303370786517
+    }
+  },
+  "model_versions": {
+    "python": "3.12.14",
+    "rdkit": "2026.03.1",
+    "scikit_learn": "1.9.1"
+  },
+  "cohort_metrics": {
+    "CHEMBL932062": {
+      "document_chembl_id": "CHEMBL1143182",
+      "primary_model": {
+        "parent_count": 18,
+        "positive_count": 8,
+        "negative_count": 10,
+        "recovery_at_5": 3,
+        "precision_at_5": 0.6,
+        "recall_at_5": 0.375,
+        "roc_auc": 0.625,
+        "average_precision": 0.6735119047619047,
+        "prevalence_baseline_average_precision": 0.4444444444444444,
+        "random_expected_recovery_at_5": 2.2222222222222223,
+        "random_probability_at_least_observed_recovery": 0.38235294117647056,
+        "top_5_parent_ids": [
+          "CHEMBL403449",
+          "CHEMBL403969",
+          "CHEMBL439067",
+          "CHEMBL256691",
+          "CHEMBL257742"
+        ]
+      },
+      "nearest_neighbor": {
+        "parent_count": 18,
+        "positive_count": 8,
+        "negative_count": 10,
+        "recovery_at_5": 2,
+        "precision_at_5": 0.4,
+        "recall_at_5": 0.25,
+        "roc_auc": 0.575,
+        "average_precision": 0.4861111111111111,
+        "prevalence_baseline_average_precision": 0.4444444444444444,
+        "random_expected_recovery_at_5": 2.2222222222222223,
+        "random_probability_at_least_observed_recovery": 0.38235294117647056,
+        "top_5_parent_ids": [
+          "CHEMBL403449",
+          "CHEMBL258101",
+          "CHEMBL273206",
+          "CHEMBL269952",
+          "CHEMBL439067"
+        ]
+      }
+    },
+    "CHEMBL1291739": {
+      "document_chembl_id": "CHEMBL1287796",
+      "primary_model": {
+        "parent_count": 12,
+        "positive_count": 9,
+        "negative_count": 3,
+        "recovery_at_5": 4,
+        "precision_at_5": 0.8,
+        "recall_at_5": 0.4444444444444444,
+        "roc_auc": 0.6296296296296297,
+        "average_precision": 0.8828362995029664,
+        "prevalence_baseline_average_precision": 0.75,
+        "random_expected_recovery_at_5": 3.75,
+        "random_probability_at_least_observed_recovery": 0.6363636363636365,
+        "top_5_parent_ids": [
+          "CHEMBL1618605",
+          "CHEMBL1618540",
+          "CHEMBL1618448",
+          "CHEMBL1618539",
+          "CHEMBL1618420"
+        ]
+      },
+      "nearest_neighbor": {
+        "parent_count": 12,
+        "positive_count": 9,
+        "negative_count": 3,
+        "recovery_at_5": 4,
+        "precision_at_5": 0.8,
+        "recall_at_5": 0.4444444444444444,
+        "roc_auc": 0.5,
+        "average_precision": 0.75,
+        "prevalence_baseline_average_precision": 0.75,
+        "random_expected_recovery_at_5": 3.75,
+        "random_probability_at_least_observed_recovery": 1.0,
+        "top_5_parent_ids": [
+          "CHEMBL1618541",
+          "CHEMBL1618542",
+          "CHEMBL1618540",
+          "CHEMBL1618448",
+          "CHEMBL1618522"
+        ]
+      }
+    }
+  },
+  "aggregate_metrics": {
+    "primary_model_macro_average_precision": 0.7781741021324355,
+    "nearest_neighbor_macro_average_precision": 0.6180555555555556,
+    "macro_prevalence_baseline": 0.5972222222222222,
+    "primary_model_pooled_recovery_at_10": 7,
+    "random_expected_pooled_recovery_at_10": 5.972222222222222
+  },
+  "qualified_for_cross_publication_activity_support": false,
+  "qualification_rule": "The primary model qualifies only if it recovers at least 3/5 actives in CHEMBL932062 and 4/5 in CHEMBL1291739, has at least 8/10 pooled recovery, and its macro-average precision strictly exceeds both the nearest-neighbor macro-average precision and the macro-average test prevalence baseline.",
+  "interpretation": "This is retrospective cross-publication classification on heterogeneous public plasma/serum assay conditions. It does not qualify exact-assay potency, prospective ranking, clinical pharmacology, exposure, safety, or therapeutic equivalence."
+}

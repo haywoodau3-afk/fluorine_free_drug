@@ -1,0 +1,7 @@
+case_title,candidate_identifier,parent,matched_phase_ii_state_id,strict_stereochemistry_status,canonical_isomeric_smiles,inchikey
+Celecoxib-derived pyrazole-3-carboxylic acid,P4D-0232946b6e317379,celecoxib,STATE-70d6e1863660ad083cad,Pass,Cc1ccc(-c2cc(C(=O)O)nn2-c2ccc(S(N)(=O)=O)cc2)cc1,WVVMXACTNGMBBT-UHFFFAOYSA-N
+Sitagliptin C3-methyl analogue,DESIGN-b7150737828a9c774fe4,sitagliptin,STATE-361ff71ff48d8d51b659,Pass,Cc1nnc2n1CCN(C(=O)C[C@H](N)Cc1ccccc1)C2,DEOIDEMAHRZOOI-CQSZACIVSA-N
+Efavirenz C4-carboxamide benzoxazinone,P4D-19f36a3a83ff3ebc,efavirenz,,Not assessed,NC(=O)C1(C#CC2CC2)OC(=O)Nc2ccc(Cl)cc21,JRRZNGKUIQYXOP-UHFFFAOYSA-N
+Celecoxib-derived sulfamoylphenyl thiazole,P4D-790cb165ad1c974a,celecoxib,,Not assessed,Cc1ccc(-c2sc(C)nc2-c2ccc(S(N)(=O)=O)cc2)cc1,HJTQRANVHHOPCX-UHFFFAOYSA-N
+Aprepitant-derived substituted morpholine,P4D-00654a38340f8c65,aprepitant,,Not assessed,Cc1cc(N)cc([C@@H](C)O[C@H]2OCCN(Cc3n[nH]c(=O)[nH]3)[C@H]2c2ccccc2)c1,HOCQKUFFPDMPLT-GQWLDOHISA-N
+Sorafenib-derived pyridyl ether / phenol / methylamide,P4D-02e9f16d88ea850c,sorafenib,STATE-780a70aa4786ecb01a2c,Pass,CNC(=O)c1cc(Oc2ccc(O)cc2)ccn1,HKLYPJHKCGGSSE-UHFFFAOYSA-N

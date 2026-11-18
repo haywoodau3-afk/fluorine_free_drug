@@ -1,0 +1,10 @@
+{
+  "source": "10.1016/j.bmcl.2007.03.098",
+  "rat_oral_bioavailability_percent": {
+    "compound_1": 76,
+    "compound_49": 39
+  },
+  "oral_dose_mg_per_kg": 2,
+  "locator": "Table 3",
+  "dpp4_assay_source": "Tables 1 and 2; detailed method cited to Leiting et al. (2003)"
+}

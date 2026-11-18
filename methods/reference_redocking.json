@@ -1,0 +1,40 @@
+{
+  "protocol_version": "0.1",
+  "status": "frozen before docking outcomes",
+  "purpose": "Assess sitagliptin pose recovery for Figure 4A.",
+  "reference_complexes": [
+    {
+      "pdb_id": "1X70",
+      "ligand_component_id": "715",
+      "ligand_label_asym_id": "P",
+      "protein_auth_chain_id": "A",
+      "drug": "sitagliptin"
+    }
+  ],
+  "grid": {
+    "padding_added_to_each_box_dimension_angstrom": 8.0
+  },
+  "structure_preparation": {
+    "protein_alternate_location": "Use alternate conformer A where present; retain blank-altloc atoms.",
+    "ligand_alternate_location": "Choose the highest-occupancy coordinate for each component atom and record its altloc."
+  },
+  "docking": {
+    "cpu_threads": 4,
+    "exhaustiveness": 32,
+    "num_modes": 20,
+    "energy_range_kcal_per_mol": 3.0,
+    "random_seeds": [
+      20261003,
+      20261004,
+      20261005
+    ]
+  },
+  "pose_metric": {
+    "heavy_atom_rmsd_angstrom": true,
+    "symmetry_aware_atom_mapping": true,
+    "acceptable_pose_threshold_angstrom": 2.0,
+    "rank_cutoff": 5,
+    "success_rule": "The archived protocol required a pose within 2 \u00c5 among the top five in at least two seeds."
+  },
+  "interpretation": "Passing qualifies only local DPP-4 pose plausibility under this setup. It does not establish affinity calibration, prospective performance, or qualification for other targets."
+}

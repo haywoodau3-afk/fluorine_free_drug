@@ -1,0 +1,16 @@
+{
+  "software": "AiZynthFinder 4.4.1",
+  "asset_sha256": {
+    "uspto_model.onnx": "bd0a3cb74cd7068de474c8fb789a00a66bc42c75636d66510ccac585ebe928f8",
+    "uspto_templates.csv.gz": "a4f1945e90cfa195538320833d68aed38f14e2fcc2f8afb5d958bc920edcafbe",
+    "uspto_filter_model.onnx": "ad29aa32bdfcbe37065045546493806cf04899c55386c438905d83fb14bb6320",
+    "zinc_stock.hdf5": "99d39a6f807c3e815487500bafc2b4a9dc66a31af189e3b1776874fb0d4a188d"
+  },
+  "second_pass_targets": 813,
+  "second_pass_workers": 8,
+  "sources": [
+    "https://doi.org/10.5281/zenodo.7797465",
+    "https://doi.org/10.5281/zenodo.7341155",
+    "https://doi.org/10.6084/m9.figshare.12334577.v1"
+  ]
+}

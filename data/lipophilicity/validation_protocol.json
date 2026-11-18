@@ -1,0 +1,81 @@
+{
+  "source_data": {
+    "benchmark_archive": "Harvard Dataverse 4426004",
+    "raw_task_tables": "Harvard Dataverse 4259595",
+    "tdc_package_source": "PyTDC 1.1.15",
+    "fixed_test_partition": "Use TDC-provided test.csv unchanged except removal of structure leakage or unparseable structures from model scoring; record every exclusion.",
+    "train_validation_partition": "Use TDC-provided train_val.csv; create five internal scaffold train/validation splits with PyTDC 1.1.15 create_scaffold_split behavior, frac=[0.875,0.125,0.0].",
+    "scaffold_definition": "RDKit Bemis-Murcko scaffold, includeChirality=False, matching PyTDC 1.1.15.",
+    "seed_list": [
+      11,
+      23,
+      37,
+      53,
+      71
+    ],
+    "duplicate_handling": "Retain repeated measurement rows within their source partition. Group identical Bemis-Murcko scaffolds within each internal split. Remove all test rows whose standardized stereochemical InChIKey or Murcko scaffold occurs in train_val; list exclusions and rationale.",
+    "invalid_structure_handling": "Retain invalid source rows in benchmark archives and inventory, but exclude them from fingerprint modeling and report exact counts."
+  },
+  "models": {
+    "primary_baseline": {
+      "name": "Morgan ECFP4 random forest",
+      "fingerprint": {
+        "radius": 2,
+        "bits": 2048,
+        "include_chirality": true
+      },
+      "random_forest": {
+        "n_estimators": 300,
+        "max_features": "sqrt",
+        "min_samples_leaf": 2,
+        "bootstrap": true,
+        "n_jobs": 2,
+        "random_state": "split seed"
+      }
+    },
+    "comparison_baselines": [
+      "Regression training-set median predictor",
+      "One-nearest-neighbor ECFP4 Tanimoto retrieval"
+    ]
+  },
+  "uncertainty_and_domain": {
+    "regression_intervals": "Per seed, construct a 90% split-conformal prediction interval using the finite-sample corrected quantile of absolute residuals from that seed's internal scaffold validation set. Report fixed-test empirical coverage, interval width, and a 95% Wilson interval for coverage.",
+    "applicability_domain": "For each seed, calculate each validation/test/candidate molecule's maximum ECFP4 Tanimoto similarity to that seed's training compounds. Define that seed's domain cutoff as the 5th percentile of validation maximum-similarity values. A candidate is in-domain only if it meets or exceeds the cutoff in all five seeds. Report the cutoff and all five similarities.",
+    "parent_checks": "For each parent, report exact measured-label matches in raw and split benchmark data, training/validation/test membership, and maximum similarity to training compounds. Never describe a parent prediction as independently recovered when the parent was part of that seed's training set."
+  },
+  "qualification_gate": {
+    "regression": "An endpoint predictor qualifies for reference-domain prediction only if its five-seed mean fixed-test MAE beats the training-median baseline, the 90% conformal test-coverage interval includes 90% in at least four of five seeds, the test partition has no unresolved exact-identity or scaffold leakage after the listed exclusions, and the endpoint scale is resolved. Compare the RF and nearest-neighbor errors; report which predictor is retained.",
+    "scope": "Qualification applies only to the tested TDC chemical domain and prediction endpoint. It does not qualify a candidate outside the measured applicability domain or imply pharmacological equivalence."
+  },
+  "candidate_parent_comparison": {
+    "candidate_cohort": "194 strict stereochemistry-passing states; no new structures added before the full-cohort screen.",
+    "parent_reference": "Use an exact, source-matched parent measurement from the same endpoint when available. If absent, ambiguous, or assay conditions cannot support a comparable reference, mark candidate-parent comparison unavailable.",
+    "continuous_endpoint_delta": "candidate predicted label minus exact measured parent label, in the original endpoint scale.",
+    "model_resolution_tolerance": "If and only if the predictor and candidate qualify, define endpoint-specific tolerance as the retained predictor's mean fixed-test MAE. This is a model-resolution criterion, not a biological or clinical equivalence margin.",
+    "pass_rule": "Pass only if the full 90% candidate prediction interval lies inside [parent measured value - held-out MAE, parent measured value + held-out MAE], the parent reference is source-comparable, and the candidate passes the all-five-seed applicability-domain rule.",
+    "selection_rule": "If multiple structures pass for one drug-endpoint, select the smallest absolute candidate-minus-parent difference; report denominator and all failures/abstentions. Treat the screen-selected exemplar as exploratory, not independent confirmation.",
+    "no_qualified_predictor": "Abstain for every candidate on that endpoint."
+  },
+  "software_provenance": {
+    "python_version": "3.12.14",
+    "rdkit_version": "2026.03.1",
+    "scikit_learn_version": "1.9.1"
+  },
+  "endpoint_decisions": [
+    {
+      "endpoint_id": "Lipophilicity_AstraZeneca",
+      "definition": "TDC/AstraZeneca experimental lipophilicity task; not generic calculated logP",
+      "units": "log-ratio",
+      "task_type": "regression",
+      "primary_metric": "MAE",
+      "secondary_metrics": [
+        "RMSE",
+        "R2"
+      ],
+      "advance_to_evaluation": true,
+      "known_limitations": [
+        "assay-level pH and method metadata are not present in benchmark split files"
+      ]
+    }
+  ]
+}

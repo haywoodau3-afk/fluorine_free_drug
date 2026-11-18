@@ -1,0 +1,1065 @@
+{
+  "analysis_status": "exploratory post-hoc matched-pair scan; no confirmatory or causal claim",
+  "question": "Within ChEMBL source/assay groups, what measured human-target-assigned DPP-4 IC50 changes accompany exact replacement of a CF3 substituent attached to an aromatic carbon by an observed screen-negative analogue?",
+  "input_path": "data/release_candidate/chembl/dpp4_activity_records.csv",
+  "input_sha256": "7a9156fcaa497d0f140511c2222f9680f1067ac0aac1f2acc244599df4db5644",
+  "python_version": "3.12.14",
+  "rdkit_version": "2026.03.1",
+  "script": "scripts/analyze_dpp4_aryl_cf3_replacement_matched_pairs.py",
+  "screen_definition": "Project whole-parent saturated-CF2/CF3 filter; CF3 parent must pass and replacement analogue must fail.",
+  "bootstrap_replicates": 20000,
+  "bootstrap_seed": 20261005,
+  "scan": {
+    "input_rows": 6553,
+    "invalid_or_out_of_scope_rows": 1661,
+    "eligible_exact_parent_rows": 4892,
+    "source_assay_target_parent_nodes": 4803,
+    "ambiguous_nodes_excluded": 74,
+    "unambiguous_nodes": 4729,
+    "enumerated_screen_crossing_hits_before_pair_deduplication": 278
+  },
+  "by_replacement": {
+    "Br": {
+      "pair_context_count": 6,
+      "document_count": 6,
+      "assay_count": 6,
+      "unique_structure_pair_count": 6,
+      "analogue_lower_ic50_count": 4,
+      "equal_ic50_count": 0,
+      "analogue_higher_ic50_count": 2,
+      "median_ic50_cf3_over_analogue_ratio": 1.2605846026512149,
+      "document_cluster_bootstrap_median_ratio_95ci": [
+        0.8215752063114113,
+        4.3127717305695645
+      ],
+      "unique_structure_pair_median_ratio": 1.2605846026512149,
+      "unique_structure_pair_direction_counts": {
+        "analogue_lower_ic50": 4,
+        "equal": 0,
+        "analogue_higher_ic50": 2
+      },
+      "document_median_direction_counts": {
+        "analogue_lower_ic50": 4,
+        "equal": 0,
+        "analogue_higher_ic50": 2
+      },
+      "pair_contexts_with_assay_description_not_explicitly_unknown_origin": 6,
+      "excluding_explicitly_unknown_assay_origin": {
+        "pair_context_count": 6,
+        "document_count": 6,
+        "assay_count": 6,
+        "unique_structure_pair_count": 6,
+        "analogue_lower_ic50_count": 4,
+        "equal_ic50_count": 0,
+        "analogue_higher_ic50_count": 2,
+        "median_ic50_cf3_over_analogue_ratio": 1.2605846026512149,
+        "document_cluster_bootstrap_median_ratio_95ci": [
+          0.8215752063114113,
+          4.3127717305695645
+        ],
+        "unique_structure_pair_median_ratio": 1.2605846026512149,
+        "unique_structure_pair_direction_counts": {
+          "analogue_lower_ic50": 4,
+          "equal": 0,
+          "analogue_higher_ic50": 2
+        },
+        "document_median_direction_counts": {
+          "analogue_lower_ic50": 4,
+          "equal": 0,
+          "analogue_higher_ic50": 2
+        },
+        "pair_contexts_with_assay_description_not_explicitly_unknown_origin": 6
+      },
+      "excluded_explicitly_unknown_origin_pair_context_count": 0
+    },
+    "CH2OH": {
+      "pair_context_count": 2,
+      "document_count": 2,
+      "assay_count": 2,
+      "unique_structure_pair_count": 2,
+      "analogue_lower_ic50_count": 1,
+      "equal_ic50_count": 0,
+      "analogue_higher_ic50_count": 1,
+      "median_ic50_cf3_over_analogue_ratio": 0.9317760040584488,
+      "document_cluster_bootstrap_median_ratio_95ci": [
+        0.391304347826087,
+        2.21875
+      ],
+      "unique_structure_pair_median_ratio": 0.9317760040584488,
+      "unique_structure_pair_direction_counts": {
+        "analogue_lower_ic50": 1,
+        "equal": 0,
+        "analogue_higher_ic50": 1
+      },
+      "document_median_direction_counts": {
+        "analogue_lower_ic50": 1,
+        "equal": 0,
+        "analogue_higher_ic50": 1
+      },
+      "pair_contexts_with_assay_description_not_explicitly_unknown_origin": 2,
+      "excluding_explicitly_unknown_assay_origin": {
+        "pair_context_count": 2,
+        "document_count": 2,
+        "assay_count": 2,
+        "unique_structure_pair_count": 2,
+        "analogue_lower_ic50_count": 1,
+        "equal_ic50_count": 0,
+        "analogue_higher_ic50_count": 1,
+        "median_ic50_cf3_over_analogue_ratio": 0.9317760040584488,
+        "document_cluster_bootstrap_median_ratio_95ci": [
+          0.391304347826087,
+          2.21875
+        ],
+        "unique_structure_pair_median_ratio": 0.9317760040584488,
+        "unique_structure_pair_direction_counts": {
+          "analogue_lower_ic50": 1,
+          "equal": 0,
+          "analogue_higher_ic50": 1
+        },
+        "document_median_direction_counts": {
+          "analogue_lower_ic50": 1,
+          "equal": 0,
+          "analogue_higher_ic50": 1
+        },
+        "pair_contexts_with_assay_description_not_explicitly_unknown_origin": 2
+      },
+      "excluded_explicitly_unknown_origin_pair_context_count": 0
+    },
+    "CH3": {
+      "pair_context_count": 38,
+      "document_count": 23,
+      "assay_count": 24,
+      "unique_structure_pair_count": 35,
+      "analogue_lower_ic50_count": 21,
+      "equal_ic50_count": 0,
+      "analogue_higher_ic50_count": 17,
+      "median_ic50_cf3_over_analogue_ratio": 1.0976164652381564,
+      "document_cluster_bootstrap_median_ratio_95ci": [
+        0.7333333333333334,
+        1.8235294117647058
+      ],
+      "unique_structure_pair_median_ratio": 1.0520812706250406,
+      "unique_structure_pair_direction_counts": {
+        "analogue_lower_ic50": 19,
+        "equal": 0,
+        "analogue_higher_ic50": 16
+      },
+      "document_median_direction_counts": {
+        "analogue_lower_ic50": 13,
+        "equal": 0,
+        "analogue_higher_ic50": 10
+      },
+      "pair_contexts_with_assay_description_not_explicitly_unknown_origin": 37,
+      "excluding_explicitly_unknown_assay_origin": {
+        "pair_context_count": 37,
+        "document_count": 22,
+        "assay_count": 23,
+        "unique_structure_pair_count": 34,
+        "analogue_lower_ic50_count": 20,
+        "equal_ic50_count": 0,
+        "analogue_higher_ic50_count": 17,
+        "median_ic50_cf3_over_analogue_ratio": 1.0952380952380953,
+        "document_cluster_bootstrap_median_ratio_95ci": [
+          0.7150655505119564,
+          2.0
+        ],
+        "unique_structure_pair_median_ratio": 1.0328085546193122,
+        "unique_structure_pair_direction_counts": {
+          "analogue_lower_ic50": 18,
+          "equal": 0,
+          "analogue_higher_ic50": 16
+        },
+        "document_median_direction_counts": {
+          "analogue_lower_ic50": 12,
+          "equal": 0,
+          "analogue_higher_ic50": 10
+        },
+        "pair_contexts_with_assay_description_not_explicitly_unknown_origin": 37
+      },
+      "excluded_explicitly_unknown_origin_pair_context_count": 1
+    },
+    "CHF2": {
+      "pair_context_count": 6,
+      "document_count": 6,
+      "assay_count": 6,
+      "unique_structure_pair_count": 4,
+      "analogue_lower_ic50_count": 5,
+      "equal_ic50_count": 0,
+      "analogue_higher_ic50_count": 1,
+      "median_ic50_cf3_over_analogue_ratio": 2.1666666666666665,
+      "document_cluster_bootstrap_median_ratio_95ci": [
+        1.1596670152276025,
+        2.4402809071300093
+      ],
+      "unique_structure_pair_median_ratio": 2.207232325255658,
+      "unique_structure_pair_direction_counts": {
+        "analogue_lower_ic50": 3,
+        "equal": 0,
+        "analogue_higher_ic50": 1
+      },
+      "document_median_direction_counts": {
+        "analogue_lower_ic50": 5,
+        "equal": 0,
+        "analogue_higher_ic50": 1
+      },
+      "pair_contexts_with_assay_description_not_explicitly_unknown_origin": 6,
+      "excluding_explicitly_unknown_assay_origin": {
+        "pair_context_count": 6,
+        "document_count": 6,
+        "assay_count": 6,
+        "unique_structure_pair_count": 4,
+        "analogue_lower_ic50_count": 5,
+        "equal_ic50_count": 0,
+        "analogue_higher_ic50_count": 1,
+        "median_ic50_cf3_over_analogue_ratio": 2.1666666666666665,
+        "document_cluster_bootstrap_median_ratio_95ci": [
+          1.1596670152276025,
+          2.4402809071300093
+        ],
+        "unique_structure_pair_median_ratio": 2.207232325255658,
+        "unique_structure_pair_direction_counts": {
+          "analogue_lower_ic50": 3,
+          "equal": 0,
+          "analogue_higher_ic50": 1
+        },
+        "document_median_direction_counts": {
+          "analogue_lower_ic50": 5,
+          "equal": 0,
+          "analogue_higher_ic50": 1
+        },
+        "pair_contexts_with_assay_description_not_explicitly_unknown_origin": 6
+      },
+      "excluded_explicitly_unknown_origin_pair_context_count": 0
+    },
+    "CN": {
+      "pair_context_count": 33,
+      "document_count": 15,
+      "assay_count": 15,
+      "unique_structure_pair_count": 28,
+      "analogue_lower_ic50_count": 20,
+      "equal_ic50_count": 0,
+      "analogue_higher_ic50_count": 13,
+      "median_ic50_cf3_over_analogue_ratio": 1.2,
+      "document_cluster_bootstrap_median_ratio_95ci": [
+        0.9090909090909091,
+        1.5401600641672974
+      ],
+      "unique_structure_pair_median_ratio": 1.2162690265017795,
+      "unique_structure_pair_direction_counts": {
+        "analogue_lower_ic50": 18,
+        "equal": 0,
+        "analogue_higher_ic50": 10
+      },
+      "document_median_direction_counts": {
+        "analogue_lower_ic50": 11,
+        "equal": 0,
+        "analogue_higher_ic50": 4
+      },
+      "pair_contexts_with_assay_description_not_explicitly_unknown_origin": 29,
+      "excluding_explicitly_unknown_assay_origin": {
+        "pair_context_count": 29,
+        "document_count": 14,
+        "assay_count": 14,
+        "unique_structure_pair_count": 28,
+        "analogue_lower_ic50_count": 19,
+        "equal_ic50_count": 0,
+        "analogue_higher_ic50_count": 10,
+        "median_ic50_cf3_over_analogue_ratio": 1.2327586206896552,
+        "document_cluster_bootstrap_median_ratio_95ci": [
+          0.9090909090909091,
+          1.6163972721942859
+        ],
+        "unique_structure_pair_median_ratio": 1.2162690265017795,
+        "unique_structure_pair_direction_counts": {
+          "analogue_lower_ic50": 18,
+          "equal": 0,
+          "analogue_higher_ic50": 10
+        },
+        "document_median_direction_counts": {
+          "analogue_lower_ic50": 11,
+          "equal": 0,
+          "analogue_higher_ic50": 3
+        },
+        "pair_contexts_with_assay_description_not_explicitly_unknown_origin": 29
+      },
+      "excluded_explicitly_unknown_origin_pair_context_count": 4
+    },
+    "Cl": {
+      "pair_context_count": 31,
+      "document_count": 20,
+      "assay_count": 20,
+      "unique_structure_pair_count": 31,
+      "analogue_lower_ic50_count": 18,
+      "equal_ic50_count": 1,
+      "analogue_higher_ic50_count": 12,
+      "median_ic50_cf3_over_analogue_ratio": 1.5116279069767442,
+      "document_cluster_bootstrap_median_ratio_95ci": [
+        0.8484848484848485,
+        2.52454587906536
+      ],
+      "unique_structure_pair_median_ratio": 1.5116279069767442,
+      "unique_structure_pair_direction_counts": {
+        "analogue_lower_ic50": 18,
+        "equal": 1,
+        "analogue_higher_ic50": 12
+      },
+      "document_median_direction_counts": {
+        "analogue_lower_ic50": 12,
+        "equal": 1,
+        "analogue_higher_ic50": 7
+      },
+      "pair_contexts_with_assay_description_not_explicitly_unknown_origin": 30,
+      "excluding_explicitly_unknown_assay_origin": {
+        "pair_context_count": 30,
+        "document_count": 19,
+        "assay_count": 19,
+        "unique_structure_pair_count": 30,
+        "analogue_lower_ic50_count": 18,
+        "equal_ic50_count": 0,
+        "analogue_higher_ic50_count": 12,
+        "median_ic50_cf3_over_analogue_ratio": 1.5585615664253334,
+        "document_cluster_bootstrap_median_ratio_95ci": [
+          0.8143608289543917,
+          2.538969616908851
+        ],
+        "unique_structure_pair_median_ratio": 1.5585615664253334,
+        "unique_structure_pair_direction_counts": {
+          "analogue_lower_ic50": 18,
+          "equal": 0,
+          "analogue_higher_ic50": 12
+        },
+        "document_median_direction_counts": {
+          "analogue_lower_ic50": 12,
+          "equal": 0,
+          "analogue_higher_ic50": 7
+        },
+        "pair_contexts_with_assay_description_not_explicitly_unknown_origin": 30
+      },
+      "excluded_explicitly_unknown_origin_pair_context_count": 1
+    },
+    "F": {
+      "pair_context_count": 47,
+      "document_count": 21,
+      "assay_count": 22,
+      "unique_structure_pair_count": 44,
+      "analogue_lower_ic50_count": 26,
+      "equal_ic50_count": 2,
+      "analogue_higher_ic50_count": 19,
+      "median_ic50_cf3_over_analogue_ratio": 1.3,
+      "document_cluster_bootstrap_median_ratio_95ci": [
+        0.7222222222222222,
+        2.056349053193895
+      ],
+      "unique_structure_pair_median_ratio": 1.4304881321759704,
+      "unique_structure_pair_direction_counts": {
+        "analogue_lower_ic50": 26,
+        "equal": 2,
+        "analogue_higher_ic50": 16
+      },
+      "document_median_direction_counts": {
+        "analogue_lower_ic50": 13,
+        "equal": 1,
+        "analogue_higher_ic50": 7
+      },
+      "pair_contexts_with_assay_description_not_explicitly_unknown_origin": 46,
+      "excluding_explicitly_unknown_assay_origin": {
+        "pair_context_count": 46,
+        "document_count": 20,
+        "assay_count": 21,
+        "unique_structure_pair_count": 43,
+        "analogue_lower_ic50_count": 25,
+        "equal_ic50_count": 2,
+        "analogue_higher_ic50_count": 19,
+        "median_ic50_cf3_over_analogue_ratio": 1.2722197319479116,
+        "document_cluster_bootstrap_median_ratio_95ci": [
+          0.7222222222222222,
+          2.0
+        ],
+        "unique_structure_pair_median_ratio": 1.3,
+        "unique_structure_pair_direction_counts": {
+          "analogue_lower_ic50": 25,
+          "equal": 2,
+          "analogue_higher_ic50": 16
+        },
+        "document_median_direction_counts": {
+          "analogue_lower_ic50": 12,
+          "equal": 1,
+          "analogue_higher_ic50": 7
+        },
+        "pair_contexts_with_assay_description_not_explicitly_unknown_origin": 46
+      },
+      "excluded_explicitly_unknown_origin_pair_context_count": 1
+    },
+    "H": {
+      "pair_context_count": 86,
+      "document_count": 38,
+      "assay_count": 39,
+      "unique_structure_pair_count": 83,
+      "analogue_lower_ic50_count": 42,
+      "equal_ic50_count": 2,
+      "analogue_higher_ic50_count": 42,
+      "median_ic50_cf3_over_analogue_ratio": 1.0,
+      "document_cluster_bootstrap_median_ratio_95ci": [
+        0.7100716024967264,
+        1.3275862068965518
+      ],
+      "unique_structure_pair_median_ratio": 1.0,
+      "unique_structure_pair_direction_counts": {
+        "analogue_lower_ic50": 41,
+        "equal": 2,
+        "analogue_higher_ic50": 40
+      },
+      "document_median_direction_counts": {
+        "analogue_lower_ic50": 18,
+        "equal": 1,
+        "analogue_higher_ic50": 19
+      },
+      "pair_contexts_with_assay_description_not_explicitly_unknown_origin": 84,
+      "excluding_explicitly_unknown_assay_origin": {
+        "pair_context_count": 84,
+        "document_count": 36,
+        "assay_count": 37,
+        "unique_structure_pair_count": 81,
+        "analogue_lower_ic50_count": 42,
+        "equal_ic50_count": 1,
+        "analogue_higher_ic50_count": 41,
+        "median_ic50_cf3_over_analogue_ratio": 1.0140259304231927,
+        "document_cluster_bootstrap_median_ratio_95ci": [
+          0.7140055472954167,
+          1.3376623376623376
+        ],
+        "unique_structure_pair_median_ratio": 1.0282485875706215,
+        "unique_structure_pair_direction_counts": {
+          "analogue_lower_ic50": 41,
+          "equal": 1,
+          "analogue_higher_ic50": 39
+        },
+        "document_median_direction_counts": {
+          "analogue_lower_ic50": 18,
+          "equal": 0,
+          "analogue_higher_ic50": 18
+        },
+        "pair_contexts_with_assay_description_not_explicitly_unknown_origin": 84
+      },
+      "excluded_explicitly_unknown_origin_pair_context_count": 2
+    },
+    "OCH3": {
+      "pair_context_count": 22,
+      "document_count": 12,
+      "assay_count": 12,
+      "unique_structure_pair_count": 22,
+      "analogue_lower_ic50_count": 10,
+      "equal_ic50_count": 0,
+      "analogue_higher_ic50_count": 12,
+      "median_ic50_cf3_over_analogue_ratio": 0.9699922452021008,
+      "document_cluster_bootstrap_median_ratio_95ci": [
+        0.447213595499958,
+        1.3361511166692195
+      ],
+      "unique_structure_pair_median_ratio": 0.9699922452021008,
+      "unique_structure_pair_direction_counts": {
+        "analogue_lower_ic50": 10,
+        "equal": 0,
+        "analogue_higher_ic50": 12
+      },
+      "document_median_direction_counts": {
+        "analogue_lower_ic50": 6,
+        "equal": 0,
+        "analogue_higher_ic50": 6
+      },
+      "pair_contexts_with_assay_description_not_explicitly_unknown_origin": 21,
+      "excluding_explicitly_unknown_assay_origin": {
+        "pair_context_count": 21,
+        "document_count": 11,
+        "assay_count": 11,
+        "unique_structure_pair_count": 21,
+        "analogue_lower_ic50_count": 9,
+        "equal_ic50_count": 0,
+        "analogue_higher_ic50_count": 12,
+        "median_ic50_cf3_over_analogue_ratio": 0.96,
+        "document_cluster_bootstrap_median_ratio_95ci": [
+          0.4,
+          1.1818181818181819
+        ],
+        "unique_structure_pair_median_ratio": 0.96,
+        "unique_structure_pair_direction_counts": {
+          "analogue_lower_ic50": 9,
+          "equal": 0,
+          "analogue_higher_ic50": 12
+        },
+        "document_median_direction_counts": {
+          "analogue_lower_ic50": 5,
+          "equal": 0,
+          "analogue_higher_ic50": 6
+        },
+        "pair_contexts_with_assay_description_not_explicitly_unknown_origin": 21
+      },
+      "excluded_explicitly_unknown_origin_pair_context_count": 1
+    },
+    "OH": {
+      "pair_context_count": 7,
+      "document_count": 5,
+      "assay_count": 5,
+      "unique_structure_pair_count": 7,
+      "analogue_lower_ic50_count": 4,
+      "equal_ic50_count": 0,
+      "analogue_higher_ic50_count": 3,
+      "median_ic50_cf3_over_analogue_ratio": 1.0142857142857142,
+      "document_cluster_bootstrap_median_ratio_95ci": [
+        0.0324449594438007,
+        17.777777777777782
+      ],
+      "unique_structure_pair_median_ratio": 1.0142857142857142,
+      "unique_structure_pair_direction_counts": {
+        "analogue_lower_ic50": 4,
+        "equal": 0,
+        "analogue_higher_ic50": 3
+      },
+      "document_median_direction_counts": {
+        "analogue_lower_ic50": 4,
+        "equal": 0,
+        "analogue_higher_ic50": 1
+      },
+      "pair_contexts_with_assay_description_not_explicitly_unknown_origin": 7,
+      "excluding_explicitly_unknown_assay_origin": {
+        "pair_context_count": 7,
+        "document_count": 5,
+        "assay_count": 5,
+        "unique_structure_pair_count": 7,
+        "analogue_lower_ic50_count": 4,
+        "equal_ic50_count": 0,
+        "analogue_higher_ic50_count": 3,
+        "median_ic50_cf3_over_analogue_ratio": 1.0142857142857142,
+        "document_cluster_bootstrap_median_ratio_95ci": [
+          0.0324449594438007,
+          17.777777777777782
+        ],
+        "unique_structure_pair_median_ratio": 1.0142857142857142,
+        "unique_structure_pair_direction_counts": {
+          "analogue_lower_ic50": 4,
+          "equal": 0,
+          "analogue_higher_ic50": 3
+        },
+        "document_median_direction_counts": {
+          "analogue_lower_ic50": 4,
+          "equal": 0,
+          "analogue_higher_ic50": 1
+        },
+        "pair_contexts_with_assay_description_not_explicitly_unknown_origin": 7
+      },
+      "excluded_explicitly_unknown_origin_pair_context_count": 0
+    }
+  },
+  "by_cf3_attachment_ring_class": {
+    "carbocyclic_aryl": {
+      "Br": {
+        "pair_context_count": 6,
+        "document_count": 6,
+        "assay_count": 6,
+        "unique_structure_pair_count": 6,
+        "analogue_lower_ic50_count": 4,
+        "equal_ic50_count": 0,
+        "analogue_higher_ic50_count": 2,
+        "median_ic50_cf3_over_analogue_ratio": 1.2605846026512149,
+        "document_cluster_bootstrap_median_ratio_95ci": [
+          0.8215752063114113,
+          4.3127717305695645
+        ],
+        "unique_structure_pair_median_ratio": 1.2605846026512149,
+        "unique_structure_pair_direction_counts": {
+          "analogue_lower_ic50": 4,
+          "equal": 0,
+          "analogue_higher_ic50": 2
+        },
+        "document_median_direction_counts": {
+          "analogue_lower_ic50": 4,
+          "equal": 0,
+          "analogue_higher_ic50": 2
+        },
+        "pair_contexts_with_assay_description_not_explicitly_unknown_origin": 6
+      },
+      "CH2OH": {
+        "pair_context_count": 1,
+        "document_count": 1,
+        "assay_count": 1,
+        "unique_structure_pair_count": 1,
+        "analogue_lower_ic50_count": 1,
+        "equal_ic50_count": 0,
+        "analogue_higher_ic50_count": 0,
+        "median_ic50_cf3_over_analogue_ratio": 2.21875,
+        "document_cluster_bootstrap_median_ratio_95ci": [
+          2.21875,
+          2.21875
+        ],
+        "unique_structure_pair_median_ratio": 2.21875,
+        "unique_structure_pair_direction_counts": {
+          "analogue_lower_ic50": 1,
+          "equal": 0,
+          "analogue_higher_ic50": 0
+        },
+        "document_median_direction_counts": {
+          "analogue_lower_ic50": 1,
+          "equal": 0,
+          "analogue_higher_ic50": 0
+        },
+        "pair_contexts_with_assay_description_not_explicitly_unknown_origin": 1
+      },
+      "CH3": {
+        "pair_context_count": 17,
+        "document_count": 8,
+        "assay_count": 8,
+        "unique_structure_pair_count": 17,
+        "analogue_lower_ic50_count": 11,
+        "equal_ic50_count": 0,
+        "analogue_higher_ic50_count": 6,
+        "median_ic50_cf3_over_analogue_ratio": 1.1,
+        "document_cluster_bootstrap_median_ratio_95ci": [
+          0.04287690179806363,
+          2.0
+        ],
+        "unique_structure_pair_median_ratio": 1.1,
+        "unique_structure_pair_direction_counts": {
+          "analogue_lower_ic50": 11,
+          "equal": 0,
+          "analogue_higher_ic50": 6
+        },
+        "document_median_direction_counts": {
+          "analogue_lower_ic50": 5,
+          "equal": 0,
+          "analogue_higher_ic50": 3
+        },
+        "pair_contexts_with_assay_description_not_explicitly_unknown_origin": 17
+      },
+      "CHF2": {
+        "pair_context_count": 1,
+        "document_count": 1,
+        "assay_count": 1,
+        "unique_structure_pair_count": 1,
+        "analogue_lower_ic50_count": 1,
+        "equal_ic50_count": 0,
+        "analogue_higher_ic50_count": 0,
+        "median_ic50_cf3_over_analogue_ratio": 2.6483516483516483,
+        "document_cluster_bootstrap_median_ratio_95ci": [
+          2.6483516483516483,
+          2.6483516483516483
+        ],
+        "unique_structure_pair_median_ratio": 2.6483516483516483,
+        "unique_structure_pair_direction_counts": {
+          "analogue_lower_ic50": 1,
+          "equal": 0,
+          "analogue_higher_ic50": 0
+        },
+        "document_median_direction_counts": {
+          "analogue_lower_ic50": 1,
+          "equal": 0,
+          "analogue_higher_ic50": 0
+        },
+        "pair_contexts_with_assay_description_not_explicitly_unknown_origin": 1
+      },
+      "CN": {
+        "pair_context_count": 27,
+        "document_count": 12,
+        "assay_count": 12,
+        "unique_structure_pair_count": 22,
+        "analogue_lower_ic50_count": 15,
+        "equal_ic50_count": 0,
+        "analogue_higher_ic50_count": 12,
+        "median_ic50_cf3_over_analogue_ratio": 1.0368098159509203,
+        "document_cluster_bootstrap_median_ratio_95ci": [
+          0.9032258064516129,
+          1.5813953488372092
+        ],
+        "unique_structure_pair_median_ratio": 1.1154244838361334,
+        "unique_structure_pair_direction_counts": {
+          "analogue_lower_ic50": 13,
+          "equal": 0,
+          "analogue_higher_ic50": 9
+        },
+        "document_median_direction_counts": {
+          "analogue_lower_ic50": 9,
+          "equal": 0,
+          "analogue_higher_ic50": 3
+        },
+        "pair_contexts_with_assay_description_not_explicitly_unknown_origin": 23
+      },
+      "Cl": {
+        "pair_context_count": 27,
+        "document_count": 18,
+        "assay_count": 18,
+        "unique_structure_pair_count": 27,
+        "analogue_lower_ic50_count": 16,
+        "equal_ic50_count": 1,
+        "analogue_higher_ic50_count": 10,
+        "median_ic50_cf3_over_analogue_ratio": 1.5116279069767442,
+        "document_cluster_bootstrap_median_ratio_95ci": [
+          0.9157612929117991,
+          2.6229508196721314
+        ],
+        "unique_structure_pair_median_ratio": 1.5116279069767442,
+        "unique_structure_pair_direction_counts": {
+          "analogue_lower_ic50": 16,
+          "equal": 1,
+          "analogue_higher_ic50": 10
+        },
+        "document_median_direction_counts": {
+          "analogue_lower_ic50": 11,
+          "equal": 1,
+          "analogue_higher_ic50": 6
+        },
+        "pair_contexts_with_assay_description_not_explicitly_unknown_origin": 26
+      },
+      "F": {
+        "pair_context_count": 44,
+        "document_count": 20,
+        "assay_count": 20,
+        "unique_structure_pair_count": 42,
+        "analogue_lower_ic50_count": 24,
+        "equal_ic50_count": 2,
+        "analogue_higher_ic50_count": 18,
+        "median_ic50_cf3_over_analogue_ratio": 1.2722197319479116,
+        "document_cluster_bootstrap_median_ratio_95ci": [
+          0.5573770491803279,
+          2.142857142857143
+        ],
+        "unique_structure_pair_median_ratio": 1.4304881321759704,
+        "unique_structure_pair_direction_counts": {
+          "analogue_lower_ic50": 24,
+          "equal": 2,
+          "analogue_higher_ic50": 16
+        },
+        "document_median_direction_counts": {
+          "analogue_lower_ic50": 11,
+          "equal": 1,
+          "analogue_higher_ic50": 8
+        },
+        "pair_contexts_with_assay_description_not_explicitly_unknown_origin": 44
+      },
+      "H": {
+        "pair_context_count": 58,
+        "document_count": 26,
+        "assay_count": 26,
+        "unique_structure_pair_count": 58,
+        "analogue_lower_ic50_count": 30,
+        "equal_ic50_count": 2,
+        "analogue_higher_ic50_count": 26,
+        "median_ic50_cf3_over_analogue_ratio": 1.0500155742008384,
+        "document_cluster_bootstrap_median_ratio_95ci": [
+          0.7918781725888325,
+          1.4222222222222223
+        ],
+        "unique_structure_pair_median_ratio": 1.0500155742008384,
+        "unique_structure_pair_direction_counts": {
+          "analogue_lower_ic50": 30,
+          "equal": 2,
+          "analogue_higher_ic50": 26
+        },
+        "document_median_direction_counts": {
+          "analogue_lower_ic50": 14,
+          "equal": 1,
+          "analogue_higher_ic50": 11
+        },
+        "pair_contexts_with_assay_description_not_explicitly_unknown_origin": 56
+      },
+      "OCH3": {
+        "pair_context_count": 20,
+        "document_count": 11,
+        "assay_count": 11,
+        "unique_structure_pair_count": 20,
+        "analogue_lower_ic50_count": 9,
+        "equal_ic50_count": 0,
+        "analogue_higher_ic50_count": 11,
+        "median_ic50_cf3_over_analogue_ratio": 0.8932648419825321,
+        "document_cluster_bootstrap_median_ratio_95ci": [
+          0.38235294117647056,
+          1.312006628707035
+        ],
+        "unique_structure_pair_median_ratio": 0.8932648419825321,
+        "unique_structure_pair_direction_counts": {
+          "analogue_lower_ic50": 9,
+          "equal": 0,
+          "analogue_higher_ic50": 11
+        },
+        "document_median_direction_counts": {
+          "analogue_lower_ic50": 5,
+          "equal": 0,
+          "analogue_higher_ic50": 6
+        },
+        "pair_contexts_with_assay_description_not_explicitly_unknown_origin": 20
+      },
+      "OH": {
+        "pair_context_count": 6,
+        "document_count": 4,
+        "assay_count": 4,
+        "unique_structure_pair_count": 6,
+        "analogue_lower_ic50_count": 3,
+        "equal_ic50_count": 0,
+        "analogue_higher_ic50_count": 3,
+        "median_ic50_cf3_over_analogue_ratio": 0.19087788025679994,
+        "document_cluster_bootstrap_median_ratio_95ci": [
+          0.0324449594438007,
+          1.7569832402234637
+        ],
+        "unique_structure_pair_median_ratio": 0.19087788025679994,
+        "unique_structure_pair_direction_counts": {
+          "analogue_lower_ic50": 3,
+          "equal": 0,
+          "analogue_higher_ic50": 3
+        },
+        "document_median_direction_counts": {
+          "analogue_lower_ic50": 3,
+          "equal": 0,
+          "analogue_higher_ic50": 1
+        },
+        "pair_contexts_with_assay_description_not_explicitly_unknown_origin": 6
+      }
+    },
+    "heteroaryl_only": {
+      "CH2OH": {
+        "pair_context_count": 1,
+        "document_count": 1,
+        "assay_count": 1,
+        "unique_structure_pair_count": 1,
+        "analogue_lower_ic50_count": 0,
+        "equal_ic50_count": 0,
+        "analogue_higher_ic50_count": 1,
+        "median_ic50_cf3_over_analogue_ratio": 0.391304347826087,
+        "document_cluster_bootstrap_median_ratio_95ci": [
+          0.391304347826087,
+          0.391304347826087
+        ],
+        "unique_structure_pair_median_ratio": 0.391304347826087,
+        "unique_structure_pair_direction_counts": {
+          "analogue_lower_ic50": 0,
+          "equal": 0,
+          "analogue_higher_ic50": 1
+        },
+        "document_median_direction_counts": {
+          "analogue_lower_ic50": 0,
+          "equal": 0,
+          "analogue_higher_ic50": 1
+        },
+        "pair_contexts_with_assay_description_not_explicitly_unknown_origin": 1
+      },
+      "CH3": {
+        "pair_context_count": 21,
+        "document_count": 16,
+        "assay_count": 17,
+        "unique_structure_pair_count": 18,
+        "analogue_lower_ic50_count": 10,
+        "equal_ic50_count": 0,
+        "analogue_higher_ic50_count": 11,
+        "median_ic50_cf3_over_analogue_ratio": 0.9625,
+        "document_cluster_bootstrap_median_ratio_95ci": [
+          0.6574098105372437,
+          2.3965787580611124
+        ],
+        "unique_structure_pair_median_ratio": 0.7963882434053345,
+        "unique_structure_pair_direction_counts": {
+          "analogue_lower_ic50": 8,
+          "equal": 0,
+          "analogue_higher_ic50": 10
+        },
+        "document_median_direction_counts": {
+          "analogue_lower_ic50": 8,
+          "equal": 0,
+          "analogue_higher_ic50": 8
+        },
+        "pair_contexts_with_assay_description_not_explicitly_unknown_origin": 20
+      },
+      "CHF2": {
+        "pair_context_count": 5,
+        "document_count": 5,
+        "assay_count": 5,
+        "unique_structure_pair_count": 3,
+        "analogue_lower_ic50_count": 4,
+        "equal_ic50_count": 0,
+        "analogue_higher_ic50_count": 1,
+        "median_ic50_cf3_over_analogue_ratio": 2.1666666666666665,
+        "document_cluster_bootstrap_median_ratio_95ci": [
+          0.6206896551724138,
+          2.2485574789169993
+        ],
+        "unique_structure_pair_median_ratio": 2.1666666666666665,
+        "unique_structure_pair_direction_counts": {
+          "analogue_lower_ic50": 2,
+          "equal": 0,
+          "analogue_higher_ic50": 1
+        },
+        "document_median_direction_counts": {
+          "analogue_lower_ic50": 4,
+          "equal": 0,
+          "analogue_higher_ic50": 1
+        },
+        "pair_contexts_with_assay_description_not_explicitly_unknown_origin": 5
+      },
+      "CN": {
+        "pair_context_count": 6,
+        "document_count": 5,
+        "assay_count": 5,
+        "unique_structure_pair_count": 6,
+        "analogue_lower_ic50_count": 5,
+        "equal_ic50_count": 0,
+        "analogue_higher_ic50_count": 1,
+        "median_ic50_cf3_over_analogue_ratio": 1.4491376746189437,
+        "document_cluster_bootstrap_median_ratio_95ci": [
+          0.8367346938775511,
+          4.785714285714286
+        ],
+        "unique_structure_pair_median_ratio": 1.4491376746189437,
+        "unique_structure_pair_direction_counts": {
+          "analogue_lower_ic50": 5,
+          "equal": 0,
+          "analogue_higher_ic50": 1
+        },
+        "document_median_direction_counts": {
+          "analogue_lower_ic50": 4,
+          "equal": 0,
+          "analogue_higher_ic50": 1
+        },
+        "pair_contexts_with_assay_description_not_explicitly_unknown_origin": 6
+      },
+      "Cl": {
+        "pair_context_count": 4,
+        "document_count": 4,
+        "assay_count": 4,
+        "unique_structure_pair_count": 4,
+        "analogue_lower_ic50_count": 2,
+        "equal_ic50_count": 0,
+        "analogue_higher_ic50_count": 2,
+        "median_ic50_cf3_over_analogue_ratio": 1.300284869073212,
+        "document_cluster_bootstrap_median_ratio_95ci": [
+          0.6,
+          2.510204081632653
+        ],
+        "unique_structure_pair_median_ratio": 1.300284869073212,
+        "unique_structure_pair_direction_counts": {
+          "analogue_lower_ic50": 2,
+          "equal": 0,
+          "analogue_higher_ic50": 2
+        },
+        "document_median_direction_counts": {
+          "analogue_lower_ic50": 2,
+          "equal": 0,
+          "analogue_higher_ic50": 2
+        },
+        "pair_contexts_with_assay_description_not_explicitly_unknown_origin": 4
+      },
+      "F": {
+        "pair_context_count": 3,
+        "document_count": 2,
+        "assay_count": 3,
+        "unique_structure_pair_count": 2,
+        "analogue_lower_ic50_count": 2,
+        "equal_ic50_count": 0,
+        "analogue_higher_ic50_count": 1,
+        "median_ic50_cf3_over_analogue_ratio": 1.391304347826087,
+        "document_cluster_bootstrap_median_ratio_95ci": [
+          1.1293194051465598,
+          2.1142857142857143
+        ],
+        "unique_structure_pair_median_ratio": 1.5452196883184643,
+        "unique_structure_pair_direction_counts": {
+          "analogue_lower_ic50": 2,
+          "equal": 0,
+          "analogue_higher_ic50": 0
+        },
+        "document_median_direction_counts": {
+          "analogue_lower_ic50": 2,
+          "equal": 0,
+          "analogue_higher_ic50": 0
+        },
+        "pair_contexts_with_assay_description_not_explicitly_unknown_origin": 2
+      },
+      "H": {
+        "pair_context_count": 28,
+        "document_count": 17,
+        "assay_count": 18,
+        "unique_structure_pair_count": 25,
+        "analogue_lower_ic50_count": 12,
+        "equal_ic50_count": 0,
+        "analogue_higher_ic50_count": 16,
+        "median_ic50_cf3_over_analogue_ratio": 0.6491753010001008,
+        "document_cluster_bootstrap_median_ratio_95ci": [
+          0.319164265129683,
+          1.9137931034482758
+        ],
+        "unique_structure_pair_median_ratio": 0.7142857142857143,
+        "unique_structure_pair_direction_counts": {
+          "analogue_lower_ic50": 11,
+          "equal": 0,
+          "analogue_higher_ic50": 14
+        },
+        "document_median_direction_counts": {
+          "analogue_lower_ic50": 6,
+          "equal": 0,
+          "analogue_higher_ic50": 11
+        },
+        "pair_contexts_with_assay_description_not_explicitly_unknown_origin": 28
+      },
+      "OCH3": {
+        "pair_context_count": 2,
+        "document_count": 2,
+        "assay_count": 2,
+        "unique_structure_pair_count": 2,
+        "analogue_lower_ic50_count": 1,
+        "equal_ic50_count": 0,
+        "analogue_higher_ic50_count": 1,
+        "median_ic50_cf3_over_analogue_ratio": 1.2987162594723385,
+        "document_cluster_bootstrap_median_ratio_95ci": [
+          0.9800884955752213,
+          1.7209302325581395
+        ],
+        "unique_structure_pair_median_ratio": 1.2987162594723385,
+        "unique_structure_pair_direction_counts": {
+          "analogue_lower_ic50": 1,
+          "equal": 0,
+          "analogue_higher_ic50": 1
+        },
+        "document_median_direction_counts": {
+          "analogue_lower_ic50": 1,
+          "equal": 0,
+          "analogue_higher_ic50": 1
+        },
+        "pair_contexts_with_assay_description_not_explicitly_unknown_origin": 1
+      },
+      "OH": {
+        "pair_context_count": 1,
+        "document_count": 1,
+        "assay_count": 1,
+        "unique_structure_pair_count": 1,
+        "analogue_lower_ic50_count": 1,
+        "equal_ic50_count": 0,
+        "analogue_higher_ic50_count": 0,
+        "median_ic50_cf3_over_analogue_ratio": 17.777777777777782,
+        "document_cluster_bootstrap_median_ratio_95ci": [
+          17.777777777777782,
+          17.777777777777782
+        ],
+        "unique_structure_pair_median_ratio": 17.777777777777782,
+        "unique_structure_pair_direction_counts": {
+          "analogue_lower_ic50": 1,
+          "equal": 0,
+          "analogue_higher_ic50": 0
+        },
+        "document_median_direction_counts": {
+          "analogue_lower_ic50": 1,
+          "equal": 0,
+          "analogue_higher_ic50": 0
+        },
+        "pair_contexts_with_assay_description_not_explicitly_unknown_origin": 1
+      }
+    }
+  },
+  "data_limitations": [
+    "ChEMBL target assignment does not prove every source assay used human enzyme; two assay descriptions in the replacement scan say origin unknown.",
+    "The origin sensitivity excludes descriptions explicitly marked unknown; it does not independently verify human species for every remaining assay.",
+    "Common document and assay IDs are database-level source groupings, not proof of same-plate paired testing.",
+    "Many primary-paper compound-number mappings and detailed assay methods remain unresolved.",
+    "A focused primary-table crosswalk verifies four CN/F pair contexts in Wu et al. (2016); a separate ChEMBL document contains three probable duplicate-source contexts, recorded with an exclusion sensitivity in wu2016_primary_source_crosswalk.md.",
+    "The graph edit includes CF3 attached to both carbocyclic aryl and heteroaryl aromatic carbons; these classes are separated in by_cf3_attachment_ring_class and must not be described as one aryl SAR effect.",
+    "The six CHF2 contexts contain only four unique structure pairs; one exact heteroaryl pair occurs under three document/assay IDs with near-identical Caco-2 protein assay descriptions and unresolved source independence. Treat that repeated contrast once in unique-pair descriptions and do not interpret the context-level CHF2 bootstrap interval as uncertainty across independent studies.",
+    "Ring class is assigned from RDKit aromatic cycles containing the CF3 attachment atom: any all-carbon aromatic cycle means carbocyclic_aryl; otherwise an aromatic cycle containing a heteroatom means heteroaryl_only; unusual ring-basis cases are marked unresolved_aromatic_system.",
+    "IC50 values are compared only as within-assay ratios; measurements are not pooled on an absolute scale.",
+    "Matched-pair effects do not establish causality or transfer to a generated candidate."
+  ]
+}

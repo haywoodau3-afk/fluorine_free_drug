@@ -1,0 +1,10 @@
+figure_panel,design_id,drug_id,canonical_isomeric_smiles,fluorine_atoms,docked,stock_terminating_route
+5A,DME-2c3bc93701a42d819162,celecoxib,Cc1ccc(-c2cc(I)nn2-c2ccc(S(N)(=O)=O)cc2)cc1,0,True,True
+5B,DME-946ca500ce12d98b4f7e,celecoxib,Cc1ccc(-c2cc(N)nn2-c2ccc(S(N)(=O)=O)cc2)cc1,0,True,True
+5C,DME-d755216e7f8f167026e7,efavirenz,O=C1Nc2ccc(Cl)cc2[C@@](C#CC2CC2)(CO)O1,0,True,False
+5D,DME-be584cef54c7abf979dd,sorafenib,CNC(=O)c1cc(Oc2ccc(NC(=O)Nc3ccc(Cl)c(Cl)c3)cc2)ccn1,0,True,True
+6A,DME-61883e39af8df1574ff8,celecoxib,NS(=O)(=O)c1ccc(-n2nc(Br)cc2-c2ccc(CO)cc2)cc1,0,True,False
+6B,DME-1fb5121c01b0ef1ddebb,sitagliptin,Cc1nnc2n1CCN(C(=O)C[C@H](N)Cc1c(F)cc(F)c(F)c1F)C2,4,True,False
+6C,DME-d755216e7f8f167026e7,efavirenz,O=C1Nc2ccc(Cl)cc2[C@@](C#CC2CC2)(CO)O1,0,True,False
+6D,DME-000d78b29e2b5ecc8b45,aprepitant,N#Cc1cc(Br)cc([C@@H](CO)O[C@H]2OCCN(Cc3n[nH]c(=O)[nH]3)[C@H]2c2ccc(F)cc2)c1,1,False,False
+6E,DME-127fa9af9ed69af3268f,sorafenib,CNC(=O)c1cc(Oc2ccc(NC(=O)Nc3ccc(Cl)c(I)c3)cc2)ccn1,0,True,False

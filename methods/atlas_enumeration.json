@@ -1,0 +1,95 @@
+{
+  "source_parent_structures": "data/atlas/mapped_atlas_and_parents.sdf",
+  "source_atom_index_policy": "Atom indices are the original RDKit indices of original_input_smiles_source for the source parent record. Every mapping is bound to that exact SMILES and its source SHA-256. Product indices are never assumed to equal parent indices.",
+  "product_constraints": {
+    "connected_final_product": true,
+    "maximum_fluorine_atoms": 0,
+    "minimum_retained_fraction": 0.5,
+    "minimum_retained_atom_rounding": "ceil",
+    "retention_denominator": "Frozen per-parent count of original heavy atoms after excluding each original terminal CF3 carbon and its three fluorines. All other original atoms, including fluorines, remain in the denominator.",
+    "count_retained_atoms": "Only chemically identical, correctly mapped original atoms with preserved connectivity among retained protected atoms count. Atoms in the declared editable set are not credited merely because a generated atom has the same element.",
+    "protected_core": [
+      "Mapped original atom identity and element",
+      "Internal bonds and bond orders",
+      "Formal charge and aromaticity",
+      "Mapped stereochemical configuration; CIP label change alone is not an inversion"
+    ],
+    "anchor_policy": "New connections and hydrogen-count changes may occur only at declared boundary anchors or within the declared editable region.",
+    "new_stereocentres": "Must be specified before acceptance; unspecified outputs remain incomplete.",
+    "chemical_state_identity": "Tautomers, protonation states, and stereoisomers are separately counted records linked to a design family and proposal lineage; conformers are linked geometries. State/stereoisomer enumeration consumes the proposal budget."
+  },
+  "parents": [
+    {
+      "drug_id": "sitagliptin",
+      "chembl_id": "CHEMBL1422",
+      "heavy_atoms": 28,
+      "fluorine_atoms": 6,
+      "terminal_cf3_groups": 1,
+      "non_cf3_denominator": 24,
+      "minimum_retained_atoms": 12,
+      "parent_sha256": "3d0e77d5a7c6b330b4e93f465e463442f9b562791294bc870e6fb1220d8e99a3"
+    },
+    {
+      "drug_id": "celecoxib",
+      "chembl_id": "CHEMBL118",
+      "heavy_atoms": 26,
+      "fluorine_atoms": 3,
+      "terminal_cf3_groups": 1,
+      "non_cf3_denominator": 22,
+      "minimum_retained_atoms": 11,
+      "parent_sha256": "8dbce83dd566935f922113c4138af6a44f809c29a6dfc89f043d2abc9e282776"
+    },
+    {
+      "drug_id": "efavirenz",
+      "chembl_id": "CHEMBL223228",
+      "heavy_atoms": 21,
+      "fluorine_atoms": 3,
+      "terminal_cf3_groups": 1,
+      "non_cf3_denominator": 17,
+      "minimum_retained_atoms": 9,
+      "parent_sha256": "90a316955dd2236da7ed308f6a9525254ed65746f96708781260601fd89bc41b"
+    },
+    {
+      "drug_id": "aprepitant",
+      "chembl_id": "CHEMBL1471",
+      "heavy_atoms": 37,
+      "fluorine_atoms": 7,
+      "terminal_cf3_groups": 2,
+      "non_cf3_denominator": 29,
+      "minimum_retained_atoms": 15,
+      "parent_sha256": "4e9950d997c5e5a3d062837a8c1123e0231cc1d66cf32388899a3a71fd3ffe00"
+    },
+    {
+      "drug_id": "sorafenib",
+      "chembl_id": "CHEMBL1336",
+      "heavy_atoms": 32,
+      "fluorine_atoms": 3,
+      "terminal_cf3_groups": 1,
+      "non_cf3_denominator": 28,
+      "minimum_retained_atoms": 14,
+      "parent_sha256": "714d8abb0e50edc4e2143ae9129a6ca280d6fda7c69c211a2e5a593246288ae0"
+    }
+  ],
+  "mask_grammar": {
+    "F0": "Terminal CF3 group for each qualifying parent site.",
+    "F1": "Graph-distance-1 neighbourhood around a CF3-bearing site.",
+    "F2": "Graph-distance-2 and graph-distance-3 neighbourhoods around a CF3-bearing site.",
+    "F3": "Each complete ring system containing a CF3-bearing attachment atom; fused/overlapping rings are treated as one ring system.",
+    "F4": "Each connected parent domain on the CF3-bearing side of a single acyclic bridge-bond cut.",
+    "coordination": "Choose one applicable primary region per CF3 site and union them with every original fluorine atom. Preserve disconnected region labels and individual region descriptors.",
+    "validity": "Retained complement must meet the frozen atom threshold and have at least one boundary bond/anchor. Final products must be connected and contain zero fluorine.",
+    "deduplication": "Deduplicate identical editable source-atom sets per parent; preserve the full set of class labels and region provenance.",
+    "rejection_log": "Record every generated grammar mask rejected for retention, invalid region, no boundary, or other declared rule, with its rule and reason.",
+    "scope_statement": "Complete within this bounded grammar only; not every possible connected subgraph."
+  },
+  "pilot_seeds": [
+    20261011,
+    20261012,
+    20261013
+  ],
+  "expansion_seeds": [
+    20261011,
+    20261012,
+    20261013
+  ]
+}

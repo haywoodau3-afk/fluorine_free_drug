@@ -1,0 +1,16 @@
+{
+  "reinvent4": {
+    "version": "4.8.24",
+    "commit": "d1f0ae4307a875a16e05306908c6db114b256d2a",
+    "prior": "https://doi.org/10.5281/zenodo.20701824",
+    "mode": "LibInvent"
+  },
+  "diffsbdd": {
+    "commit": "5d0d38d16c8932a0339fd2ce3f67ade98bbdff27",
+    "model": "CrossDocked conditional full-atom checkpoint",
+    "url": "https://doi.org/10.5281/zenodo.8183747",
+    "sha256": "07f86764bf569aafbc40a9c15fc02de8e2550437dd0f17f657eab3abe66c372c",
+    "two_parent_diffusion_steps": 50,
+    "two_parent_resamplings": 20
+  }
+}

@@ -1,0 +1,195 @@
+state_id,drug_id,topology,ring_atom_change,potential_tetrahedral_centre_change,deleted_framework_atoms,retained_anchor_count,original_cf3_sites,edit_burden
+STATE-0354e630cdb88c1544f9,aprepitant,multi-anchor or multi-site,False,False,0,3,2,14
+STATE-04ab44ba365d6e8495d4,aprepitant,multi-anchor or multi-site,False,False,0,3,2,13
+STATE-0a9de8acd430dad44a94,aprepitant,multi-anchor or multi-site,False,False,0,3,2,13
+STATE-0aea0108b26b76200068,aprepitant,multi-anchor or multi-site,False,False,0,3,2,13
+STATE-0b9e7128bda9e246e7eb,aprepitant,ring or framework,True,False,0,3,2,16
+STATE-0df43ec194c84067736d,aprepitant,ring or framework,True,False,0,3,2,15
+STATE-0e8fedb6c0408ed85a6f,aprepitant,multi-anchor or multi-site,False,False,0,3,2,10
+STATE-10247cad03a7c2264ca8,aprepitant,multi-anchor or multi-site,False,False,0,3,2,13
+STATE-1457ceb99ed7b0c43c2d,aprepitant,multi-anchor or multi-site,False,False,0,3,2,13
+STATE-18fb0499027d473d86ba,aprepitant,multi-anchor or multi-site,False,False,0,3,2,12
+STATE-194879273a89323f8bf0,aprepitant,multi-anchor or multi-site,False,False,0,3,2,9
+STATE-1bf58d59b6e399bb8e21,aprepitant,multi-anchor or multi-site,False,False,0,3,2,9
+STATE-2089dda41b6f7fd60dce,aprepitant,multi-anchor or multi-site,False,False,0,3,2,15
+STATE-211517253b493b82acc3,aprepitant,ring or framework,True,False,0,3,2,14
+STATE-2667712aa11512a6b55a,aprepitant,multi-anchor or multi-site,False,False,0,3,2,12
+STATE-27740c0eb9deca0c5883,aprepitant,multi-anchor or multi-site,False,False,0,3,2,13
+STATE-2a26bdc42fb33c2beced,aprepitant,multi-anchor or multi-site,False,False,0,3,2,13
+STATE-2c037d0c5ab600b830b5,aprepitant,multi-anchor or multi-site,False,False,0,3,2,12
+STATE-2c559c0e7775e4ea3f85,aprepitant,multi-anchor or multi-site,False,False,0,3,2,14
+STATE-2cc6c4d0e61bcb03b8e5,aprepitant,multi-anchor or multi-site,False,False,0,3,2,12
+STATE-31516135321af99a5927,aprepitant,ring or framework,True,False,0,3,2,16
+STATE-3555fb1d80416ca4d05e,aprepitant,ring or framework,True,False,0,3,2,14
+STATE-375de2486ea492bff591,aprepitant,multi-anchor or multi-site,False,False,0,3,2,13
+STATE-3a6f829bf0bf86cf0741,aprepitant,multi-anchor or multi-site,False,False,0,3,2,13
+STATE-3b32d705dd5a73861dc1,aprepitant,ring or framework,True,False,0,3,2,14
+STATE-3d91a27dab992237930f,aprepitant,multi-anchor or multi-site,False,False,0,3,2,13
+STATE-44914dcac08366d5888b,aprepitant,multi-anchor or multi-site,False,False,0,3,2,14
+STATE-49468da0d2b43a88fb85,aprepitant,multi-anchor or multi-site,False,False,0,3,2,13
+STATE-4b43fea3c9e9528b8e8a,aprepitant,multi-anchor or multi-site,False,False,0,3,2,13
+STATE-4f3d1d0ca5eb8c83a2cf,aprepitant,ring or framework,True,False,0,3,2,15
+STATE-4f505de3dd257f504f4c,aprepitant,multi-anchor or multi-site,False,False,0,3,2,12
+STATE-51ddeae484580a472645,aprepitant,multi-anchor or multi-site,False,False,0,3,2,13
+STATE-524c2bfa7d42560cc31e,aprepitant,multi-anchor or multi-site,False,False,0,3,2,14
+STATE-5581af52ddbc324e05bc,aprepitant,multi-anchor or multi-site,False,False,0,3,2,12
+STATE-55d1e70a0cb3b4894fc6,aprepitant,multi-anchor or multi-site,False,False,0,3,2,14
+STATE-593a1ce15886df744f54,aprepitant,ring or framework,True,False,0,3,2,15
+STATE-5a36148eb4717cabbd09,aprepitant,ring or framework,True,False,0,3,2,14
+STATE-5bc9e82944653cfbec69,aprepitant,ring or framework,True,False,0,3,2,13
+STATE-600667454745a3575387,aprepitant,multi-anchor or multi-site,False,False,0,3,2,14
+STATE-6616577e2874cf47113d,aprepitant,multi-anchor or multi-site,False,False,0,3,2,14
+STATE-673827ece6236a0c92cf,aprepitant,multi-anchor or multi-site,False,False,0,3,2,12
+STATE-698c7f41a8b522890b5e,aprepitant,multi-anchor or multi-site,False,False,0,3,2,15
+STATE-6ab576342d9936cb9b16,aprepitant,multi-anchor or multi-site,False,False,0,3,2,9
+STATE-6b759d59456abd4f77a6,aprepitant,multi-anchor or multi-site,False,False,0,3,2,14
+STATE-6c16a522f9c1a9cf6c2b,aprepitant,ring or framework,True,False,0,3,2,15
+STATE-6c53db8995e447fef83a,aprepitant,multi-anchor or multi-site,False,False,0,3,2,9
+STATE-6e16be6a65a14975a048,aprepitant,multi-anchor or multi-site,False,False,0,3,2,15
+STATE-6eb7dbf5f74ee80b8ee7,aprepitant,multi-anchor or multi-site,False,False,0,3,2,13
+STATE-6f11b8fe0356001c10c4,aprepitant,ring or framework,True,False,0,3,2,15
+STATE-73ecfd2c1ecdf0555c06,aprepitant,multi-anchor or multi-site,False,False,0,3,2,12
+STATE-76dcbe0589f96cfafc03,aprepitant,ring or framework,True,False,0,3,2,13
+STATE-773b9198f2169b645325,aprepitant,multi-anchor or multi-site,False,False,0,3,2,12
+STATE-781d3db5f56b6f830262,aprepitant,multi-anchor or multi-site,False,False,0,3,2,10
+STATE-79ea93b46db1a907c223,aprepitant,multi-anchor or multi-site,False,False,0,3,2,14
+STATE-893c531f6beaade9b7d8,aprepitant,ring or framework,True,False,0,3,2,15
+STATE-8abbbb7b98e8966a40fd,aprepitant,multi-anchor or multi-site,False,False,0,3,2,11
+STATE-8b8f7d9cf1bb4b9653d8,aprepitant,multi-anchor or multi-site,False,False,0,3,2,9
+STATE-8ec908b11654c34cf7f3,aprepitant,multi-anchor or multi-site,False,False,0,3,2,11
+STATE-910c192a431a6507892c,aprepitant,multi-anchor or multi-site,False,False,0,3,2,15
+STATE-93b9393981216abc4b7a,aprepitant,ring or framework,True,False,0,3,2,14
+STATE-96238e486dfeab392714,aprepitant,multi-anchor or multi-site,False,False,0,3,2,14
+STATE-9689da751f6365ff55d1,aprepitant,multi-anchor or multi-site,False,False,0,3,2,13
+STATE-984a9dccbb00d062e789,aprepitant,multi-anchor or multi-site,False,False,0,3,2,9
+STATE-991563058bfda67e4392,aprepitant,multi-anchor or multi-site,False,False,0,3,2,14
+STATE-9aa92b0767d9c0f1d3a3,aprepitant,multi-anchor or multi-site,False,False,0,3,2,11
+STATE-9d52d9230bd9fa93b90f,aprepitant,multi-anchor or multi-site,False,False,0,3,2,14
+STATE-9eadcb4bb4b1286fc6e8,aprepitant,multi-anchor or multi-site,False,False,0,3,2,14
+STATE-a2f312e912c3056b8944,aprepitant,multi-anchor or multi-site,False,False,0,3,2,16
+STATE-a482f2278d972a59aac8,aprepitant,multi-anchor or multi-site,False,False,0,3,2,15
+STATE-a4a6799beb43f6002217,aprepitant,multi-anchor or multi-site,False,False,0,3,2,15
+STATE-af93ade7215a2810ef19,aprepitant,multi-anchor or multi-site,False,False,0,3,2,15
+STATE-b338dd4d78fa4a9e9908,aprepitant,multi-anchor or multi-site,False,False,0,3,2,12
+STATE-b3d242c916bd2aa19c9e,aprepitant,multi-anchor or multi-site,False,False,0,3,2,11
+STATE-b45528dac2edb9da06a1,aprepitant,multi-anchor or multi-site,False,False,0,3,2,9
+STATE-b4f54ff552a9039cb594,aprepitant,multi-anchor or multi-site,False,False,0,3,2,11
+STATE-b5558073d75eec918d6d,aprepitant,multi-anchor or multi-site,False,False,0,3,2,15
+STATE-b572e90ce6810fb255d8,aprepitant,multi-anchor or multi-site,False,False,0,3,2,15
+STATE-b6c9f4abff2350c20030,aprepitant,multi-anchor or multi-site,False,False,0,3,2,13
+STATE-ba4083b8fb4bbb5bf55b,aprepitant,multi-anchor or multi-site,False,False,0,3,2,12
+STATE-bd7a0d9fd0b9e0a4f7d1,aprepitant,multi-anchor or multi-site,False,False,0,3,2,14
+STATE-c4d3242363b8ab2377eb,aprepitant,multi-anchor or multi-site,False,False,0,3,2,12
+STATE-cd27131ad2aac912c8d9,aprepitant,multi-anchor or multi-site,False,False,0,3,2,13
+STATE-ce7176d1deb0b5d4623c,aprepitant,multi-anchor or multi-site,False,False,0,3,2,15
+STATE-d1272724cd0799d08143,aprepitant,multi-anchor or multi-site,False,False,0,3,2,13
+STATE-d4320aa5da685fae8d10,aprepitant,multi-anchor or multi-site,False,False,0,3,2,12
+STATE-da4e6fffa6b9272a7543,aprepitant,multi-anchor or multi-site,False,False,0,3,2,13
+STATE-e619c31ad036a14da349,aprepitant,multi-anchor or multi-site,False,False,0,3,2,13
+STATE-e7b42d476efcf959959a,aprepitant,multi-anchor or multi-site,False,False,0,3,2,16
+STATE-e96425ad4974bd8e1f35,aprepitant,multi-anchor or multi-site,False,False,0,3,2,12
+STATE-ef8db78037cc7bd2a16a,aprepitant,ring or framework,True,False,0,3,2,15
+STATE-efe3de72cc6f265dc944,aprepitant,ring or framework,True,False,0,3,2,15
+STATE-f085cb8fead09c5e4cd8,aprepitant,multi-anchor or multi-site,False,False,0,3,2,13
+STATE-f13cbe56579725472fc8,aprepitant,multi-anchor or multi-site,False,False,0,3,2,12
+STATE-f5b7454e6ed79e756679,aprepitant,multi-anchor or multi-site,False,False,0,3,2,14
+STATE-f68432d76af3eae9d2ac,aprepitant,ring or framework,True,False,0,3,2,14
+STATE-f787b0e88e9c1e43c1e9,aprepitant,multi-anchor or multi-site,False,False,0,3,2,14
+STATE-f98cac6cd4bd2167009f,aprepitant,multi-anchor or multi-site,False,False,0,3,2,12
+STATE-0439b72d38063349790a,celecoxib,one-anchor,False,False,0,1,1,7
+STATE-27e810f6e820e9a1239e,celecoxib,one-anchor,False,False,0,1,1,7
+STATE-38ca39c00e7756b40f5e,celecoxib,one-anchor,False,False,0,1,1,6
+STATE-38e40adfc28ad9c8e4e9,celecoxib,one-anchor,False,False,0,1,1,5
+STATE-48f41310f9ed59d99baa,celecoxib,one-anchor,False,False,0,1,1,5
+STATE-51bd7c3f3fe08227a4b3,celecoxib,one-anchor,False,False,0,1,1,4
+STATE-66d7b235336c13c261c1,celecoxib,one-anchor,False,False,0,1,1,6
+STATE-6e882a808e71f1a6192d,celecoxib,one-anchor,False,False,0,1,1,6
+STATE-70d6e1863660ad083cad,celecoxib,one-anchor,False,False,0,1,1,7
+STATE-83a4f60283035f009c6f,celecoxib,one-anchor,False,False,0,1,1,8
+STATE-84a44bf5306445e38163,celecoxib,ring or framework,True,False,0,1,1,7
+STATE-8899c2b8b0fa77432642,celecoxib,one-anchor,False,False,0,1,1,6
+STATE-9558d978d55f759a6726,celecoxib,one-anchor,False,False,0,1,1,5
+STATE-9af0ada68a9c8989f771,celecoxib,one-anchor,False,False,0,1,1,4
+STATE-9f1537fe40add1894c0a,celecoxib,one-anchor,False,False,0,1,1,7
+STATE-bb2c944be0f6faa6c1db,celecoxib,one-anchor,False,False,0,1,1,4
+STATE-bc324c085c25dd684eb3,celecoxib,one-anchor,False,False,0,1,1,5
+STATE-c19c654e8df79a5f88e2,celecoxib,one-anchor,False,False,0,1,1,7
+STATE-c46ef0c2f2b6903df54e,celecoxib,ring or framework,True,False,0,1,1,8
+STATE-cc909706734de17a8433,celecoxib,one-anchor,False,False,0,1,1,5
+STATE-d38ff14d2c9ac6432dc6,celecoxib,one-anchor,False,False,0,1,1,6
+STATE-f7b984b9267f449b2453,celecoxib,one-anchor,False,False,0,1,1,6
+STATE-fd134f51b5c2c693c93e,celecoxib,one-anchor,False,False,0,1,1,7
+STATE-014d0aba511e80056de0,sitagliptin,multi-anchor or multi-site,False,False,0,4,1,10
+STATE-2eb986ac70cfa7454f97,sitagliptin,multi-anchor or multi-site,False,False,0,4,1,9
+STATE-361ff71ff48d8d51b659,sitagliptin,multi-anchor or multi-site,False,False,0,4,1,8
+STATE-36f637839efba7b1304d,sitagliptin,multi-anchor or multi-site,False,False,0,4,1,10
+STATE-3a761037b42bd1d69ed2,sitagliptin,multi-anchor or multi-site,False,False,0,4,1,11
+STATE-4252d65628b907d5ff03,sitagliptin,multi-anchor or multi-site,False,False,0,4,1,8
+STATE-4d53fcfd282187dff4b5,sitagliptin,multi-anchor or multi-site,False,False,0,4,1,10
+STATE-5b009edef8a1a0e7c05a,sitagliptin,multi-anchor or multi-site,False,False,0,4,1,8
+STATE-622f6423e25a611a87ee,sitagliptin,multi-anchor or multi-site,False,False,0,4,1,9
+STATE-6f13833e54fa4b1a8abb,sitagliptin,multi-anchor or multi-site,False,False,0,4,1,9
+STATE-72076d8ca37c6b9882c5,sitagliptin,multi-anchor or multi-site,False,False,0,4,1,8
+STATE-731b2bdb390aae66d913,sitagliptin,multi-anchor or multi-site,False,False,0,4,1,10
+STATE-78c6c6b4c35c41c40598,sitagliptin,ring or framework,True,False,0,4,1,11
+STATE-881b8a7911f0395871fe,sitagliptin,multi-anchor or multi-site,False,False,0,4,1,9
+STATE-8f55d03aa8a4dd5d1778,sitagliptin,multi-anchor or multi-site,False,False,0,4,1,10
+STATE-907d1051b6bf83cb8e51,sitagliptin,multi-anchor or multi-site,False,False,0,4,1,9
+STATE-9194a3faaad582b54ef5,sitagliptin,multi-anchor or multi-site,False,False,0,4,1,7
+STATE-aacf9245e3edfae135e7,sitagliptin,multi-anchor or multi-site,False,False,0,4,1,8
+STATE-bd72b76a7c3a9e72ba78,sitagliptin,ring or framework,True,False,0,4,1,10
+STATE-c59ed836d408a82b4038,sitagliptin,multi-anchor or multi-site,False,False,0,4,1,7
+STATE-cf9a3b7f75e202836e02,sitagliptin,multi-anchor or multi-site,False,False,0,4,1,10
+STATE-db94993eadd021012e28,sitagliptin,multi-anchor or multi-site,False,False,0,4,1,9
+STATE-df7baa33da0ce7df16d7,sitagliptin,multi-anchor or multi-site,False,False,0,4,1,9
+STATE-029ab164d6ddd4a1a30f,sorafenib,one-anchor,False,False,0,1,1,7
+STATE-084025cb500f96fa0012,sorafenib,one-anchor,False,False,0,1,1,6
+STATE-08b220007cb9c18baec4,sorafenib,one-anchor,False,False,0,1,1,7
+STATE-095d5ec4a6f5ab57fbc4,sorafenib,one-anchor,False,False,0,1,1,4
+STATE-0ac6eea86ce37004c41e,sorafenib,ring or framework,True,False,11,1,1,17
+STATE-148a304175ccee64da95,sorafenib,one-anchor,False,False,0,1,1,7
+STATE-2259abc2aa32e603ff32,sorafenib,one-anchor,False,False,0,1,1,4
+STATE-283bfdfac12cacba9cad,sorafenib,ring or framework,True,False,11,1,1,16
+STATE-2e3b34d21d306a6869b0,sorafenib,ring or framework,True,False,11,1,1,17
+STATE-382ccc4ad9e285da9e3e,sorafenib,ring or framework,True,False,11,1,1,18
+STATE-3aa1bd3df1982b8e4035,sorafenib,one-anchor,False,False,0,1,1,8
+STATE-401688b8a0b0a80646d9,sorafenib,ring or framework,True,False,11,1,1,17
+STATE-43a1c67a9ec7079b8dd4,sorafenib,one-anchor,False,False,0,1,1,5
+STATE-51f026ea91027c1f30a2,sorafenib,ring or framework,True,False,11,1,1,18
+STATE-6062fb0db2a41509f045,sorafenib,ring or framework,True,False,0,1,1,8
+STATE-62fb452c042fe81369f2,sorafenib,ring or framework,True,False,11,1,1,19
+STATE-67c115d62f9940d785e9,sorafenib,one-anchor,False,False,0,1,1,4
+STATE-6900b75682b56c227904,sorafenib,ring or framework,True,False,11,1,1,18
+STATE-6e450f313ddc3d036375,sorafenib,ring or framework,True,False,11,1,1,15
+STATE-752dfe2c99037dcd7180,sorafenib,one-anchor,False,False,0,1,1,7
+STATE-780a70aa4786ecb01a2c,sorafenib,ring or framework,True,False,11,1,1,16
+STATE-7db24b6daa768b2123e5,sorafenib,ring or framework,True,False,11,1,1,16
+STATE-815d481e7c6349404535,sorafenib,one-anchor,False,False,0,1,1,7
+STATE-81b7c23c071b54b52c72,sorafenib,ring or framework,True,False,11,1,1,17
+STATE-827e63cd9cbfd8120faf,sorafenib,one-anchor,False,False,0,1,1,4
+STATE-86198646dc1509d001d3,sorafenib,ring or framework,True,False,11,1,1,18
+STATE-8743babdc2407dfbe692,sorafenib,one-anchor,False,False,0,1,1,4
+STATE-88a92802599cb6ae675a,sorafenib,ring or framework,True,False,11,1,1,17
+STATE-8d225c81642f2ded2a84,sorafenib,one-anchor,False,False,0,1,1,4
+STATE-8e22424b9330dd1e217e,sorafenib,one-anchor,False,False,0,1,1,5
+STATE-9a69bee534046a8d63f0,sorafenib,ring or framework,True,False,11,1,1,18
+STATE-9ed903f9abff8e49c4ad,sorafenib,one-anchor,False,False,0,1,1,6
+STATE-a976e8ca991c5f9f7e5c,sorafenib,one-anchor,False,False,0,1,1,6
+STATE-ae3ff63ec06ad09b8394,sorafenib,one-anchor,False,False,0,1,1,5
+STATE-afeff6680357e99f1243,sorafenib,one-anchor,False,False,0,1,1,6
+STATE-bbe4d762bd442f3c3830,sorafenib,ring or framework,True,False,11,1,1,18
+STATE-bf66074fd30a44b903b1,sorafenib,one-anchor,False,False,0,1,1,5
+STATE-c1da59a4f80140adb081,sorafenib,ring or framework,True,False,11,1,1,18
+STATE-c34517e1f68101ec2700,sorafenib,one-anchor,False,False,0,1,1,6
+STATE-c34bbb7d1d69058a6e25,sorafenib,ring or framework,True,False,11,1,1,16
+STATE-c5ad054bd6b9dc44817c,sorafenib,one-anchor,False,False,0,1,1,5
+STATE-c7de6cea2c48638cd1fa,sorafenib,ring or framework,True,False,11,1,1,19
+STATE-d5ada4f73a14eb8b11c0,sorafenib,one-anchor,False,False,0,1,1,7
+STATE-d8a1cd95ec9556a11e22,sorafenib,ring or framework,True,False,0,1,1,7
+STATE-dbea3e77aba624ebc8aa,sorafenib,one-anchor,False,False,0,1,1,6
+STATE-de7323d0f9cb92a9059a,sorafenib,ring or framework,True,False,11,1,1,17
+STATE-df5951b95a3348ce50bc,sorafenib,ring or framework,True,False,11,1,1,16
+STATE-e57b278d822b1094338e,sorafenib,one-anchor,False,False,0,1,1,4
+STATE-f41f6d1a5c3e62dedefe,sorafenib,one-anchor,False,False,0,1,1,4
+STATE-f596afbbe1b8d41c63d4,sorafenib,one-anchor,False,False,0,1,1,6
+STATE-f96f2b418918b7481e4c,sorafenib,ring or framework,True,False,11,1,1,17
